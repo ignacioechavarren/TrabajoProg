@@ -43,7 +43,7 @@ public class VentanaRegistrar extends JFrame {
 		setSize(600, 700);
 		setLocationRelativeTo(null); // la ventana aparecera en el centro de la pantalla
 		
-		// 00- panel principal
+//		00- panel principal
 		
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(153, 204, 204));
@@ -56,15 +56,15 @@ public class VentanaRegistrar extends JFrame {
 		JPanel panel_move = new JPanel(); 
 		panel_move.addMouseMotionListener(new MouseMotionAdapter() {
 			@Override
-			public void mouseDragged(MouseEvent e) {
+			public void mouseDragged(MouseEvent e) { // localizara al mouse cuando sea arrastrado
 				int x = e.getXOnScreen();
 				int y = e.getYOnScreen();
-				setLocation(x - xMouse, y - yMouse); // con esto me permite mover la pagina a mi gusto
+				setLocation(x - xMouse, y - yMouse);
 			}
 		});
 		panel_move.addMouseListener(new MouseAdapter() { 
 			@Override
-			public void mousePressed(MouseEvent e) { // localizara al mouse 
+			public void mousePressed(MouseEvent e) { // localizara al mouse cuando sea presionado
 				xMouse = e.getX();
 				yMouse = e.getY();
 			}
@@ -168,14 +168,3 @@ public class VentanaRegistrar extends JFrame {
 		lblInicia.setBounds(200, 578, 200, 30);
 		contentPane.add(lblInicia);
 		
-=======
-
-public class VentanaRegistrar {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
->>>>>>> branch 'master' of https://github.com/ignacioechavarren/TrabajoProg.git
-	}
-
-}
