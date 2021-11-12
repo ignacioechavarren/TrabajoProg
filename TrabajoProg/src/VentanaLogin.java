@@ -43,7 +43,7 @@ public class VentanaLogin extends JFrame {
 		contentPane.setLayout(null);
 		
 
-		System.out.println("Hola mundo");
+
 
 		
 
