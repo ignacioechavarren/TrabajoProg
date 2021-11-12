@@ -1,22 +1,25 @@
-import java.awt.Color;
-import java.awt.Cursor;
+import java.awt.BorderLayout;
 import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import javax.swing.SwingConstants;
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
+
+import javax.swing.JTextField;
+import javax.swing.JPasswordField;
+import javax.swing.border.EtchedBorder;
+import javax.swing.border.LineBorder;
+import java.awt.Cursor;
+import javax.swing.JSeparator;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
-
-
-import javax.swing.ImageIcon;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JPasswordField;
-import javax.swing.JSeparator;
-import javax.swing.JTextField;
-import javax.swing.SwingConstants;
-import javax.swing.border.LineBorder;
 import javax.swing.border.MatteBorder;
 
 public class VentanaLogin extends JFrame {
@@ -60,6 +63,8 @@ public class VentanaLogin extends JFrame {
 		setBounds(100,100,450,300);
 		setSize(800,600);
 		setLocationRelativeTo(null);
+		
+		//panel principal
 		contentPane = new JPanel();
 		contentPane.setForeground(new Color(0,0,0));
 		contentPane.setForeground(new Color(255,255,255));
@@ -82,48 +87,6 @@ public class VentanaLogin extends JFrame {
 		lblTitule.setBounds(425, 89, 328, 51);
 		contentPane.add(lblTitule);
 		
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.SwingConstants;
-import javax.swing.border.LineBorder;
-
-	public class VentanaLogin extends JFrame {
-	
-		private JPanel contentPane;
-	
-
-
-	
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					VentanaLogin frame = new VentanaLogin();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-
-	}
-	public VentanaLogin() { 
-		setUndecorated(true);
-		setResizable(false);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100,100,450,300);
-		setSize(800,400);
-		setLocationRelativeTo(null);
-		contentPane = new JPanel();
-		contentPane.setForeground(new Color(0,0,0));
-		contentPane.setForeground(new Color(255,255,255));
-		contentPane.setBorder(new LineBorder(new Color(0,0,0,0)));
-		setContentPane(contentPane);
-		contentPane.setLayout(null);
-		
-
 
 		JLabel lblUser = new JLabel("USUARIO");
 		lblUser.setFont(new Font("Arial Black", Font.PLAIN, 17));                           // label de usuario
