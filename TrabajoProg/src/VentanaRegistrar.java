@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.EventQueue;
@@ -167,6 +168,14 @@ public class VentanaRegistrar extends JFrame {
 		lblInicia.setBounds(200, 578, 200, 30);
 		contentPane.add(lblInicia);
 		
+=======
+
+public class VentanaRegistrar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+>>>>>>> branch 'master' of https://github.com/ignacioechavarren/TrabajoProg.git
 	}
 
 }
