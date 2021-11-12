@@ -39,7 +39,7 @@ public class VentanaRegistrar extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		setSize(600, 700);
-		setLocationRelativeTo(null); // la ventana se mantiene en el centro de la pantalla
+		setLocationRelativeTo(null); // la ventana aparecera en el centro de la pantalla
 		
 		// 00- panel principal
 		
