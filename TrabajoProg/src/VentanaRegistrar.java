@@ -20,6 +20,7 @@ public class VentanaRegistrar extends JFrame {
 
 	public static void main(String[] args) {
 		
+
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
