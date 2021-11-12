@@ -1,5 +1,5 @@
 
-<<<<<<< HEAD
+
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.EventQueue;
@@ -16,12 +16,13 @@ import javax.swing.border.LineBorder;
 
 public class VentanaRegistrar extends JFrame {
 	
+	
 	private JPanel contentPane;
 	int xMouse, yMouse; // nos servira para el panel_move
 
 
 	public static void main(String[] args) {
-		
+	
 
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -123,7 +124,7 @@ public class VentanaRegistrar extends JFrame {
 			@Override
 			public void mouseClicked(MouseEvent e) { // si el mouse es clicado, saltaremos a VentanaInicio
 				VentanaInicio newframe = new VentanaInicio();
-//				newframe.setVisible(true);
+				newframe.setVisible(true);
 				dispose();
 			}
 			@Override
@@ -145,7 +146,7 @@ public class VentanaRegistrar extends JFrame {
 //		10- Boton incia sesion: boton que nos devolvera a la ventana iniciar sesion
 		// un label donde indicaremos la accion "iniciar sesion"
 
-		JLabel lblInicia = new JLabel("Inicia sesi\u00F3n");
+		JLabel lblInicia = new JLabel("Inicia sesion");
 		lblInicia.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR)); // para que aparezca una mano en vez de una flecha
 		lblInicia.addMouseListener(new MouseAdapter() {
 			@Override
@@ -169,14 +170,6 @@ public class VentanaRegistrar extends JFrame {
 		lblInicia.setBounds(200, 578, 200, 30);
 		contentPane.add(lblInicia);
 		
-=======
 
-public class VentanaRegistrar {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
->>>>>>> branch 'master' of https://github.com/ignacioechavarren/TrabajoProg.git
-	}
-
-}
+}}
