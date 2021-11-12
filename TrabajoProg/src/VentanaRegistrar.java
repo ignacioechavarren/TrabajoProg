@@ -115,7 +115,7 @@ public class VentanaRegistrar extends JFrame {
 		// un label donde indicaremos la accion "crear cuenta"
 		
 		JLabel lblCrear = new JLabel("Crear cuenta");
-		lblCrear.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+		lblCrear.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR)); // para que aparezca una mano en vez de una flecha
 		lblCrear.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) { // si el mouse es clicado, saltaremos a VentanaInicio
