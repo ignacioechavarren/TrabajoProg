@@ -75,19 +75,19 @@ public class VentanaLogin extends JFrame {
 		contentPane.add(lblPanel);
 		
 		JLabel lblTitule = new JLabel("INICIAR SESION");
-		lblTitule.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));
+		lblTitule.setBorder(new MatteBorder(1, 1, 1, 1, (Color) new Color(0, 0, 0)));          // label de iniciar sesion
 		lblTitule.setHorizontalAlignment(SwingConstants.CENTER);
 		lblTitule.setFont(new Font("Arial Black", Font.PLAIN, 30));
 		lblTitule.setBounds(425, 89, 328, 51);
 		contentPane.add(lblTitule);
 		
 		JLabel lblUser = new JLabel("USUARIO");
-		lblUser.setFont(new Font("Arial Black", Font.PLAIN, 17));
+		lblUser.setFont(new Font("Arial Black", Font.PLAIN, 17));                           // label de usuario
 		lblUser.setBounds(454, 220, 101, 30);
 		contentPane.add(lblUser);
 		
 		JLabel lblContraseña = new JLabel("CONTRASENA");
-		lblContraseña.setForeground(Color.BLACK);
+		lblContraseña.setForeground(Color.BLACK);                                            //label contrasena
 		lblContraseña.setBackground(Color.WHITE);
 		lblContraseña.setFont(new Font("Arial Black", Font.PLAIN, 17));
 		lblContraseña.setBounds(454, 310, 142, 30);
@@ -135,15 +135,15 @@ public class VentanaLogin extends JFrame {
 		contentPane.add(txtPass);
 		
 		JPanel btnEntrar = new JPanel();
-		btnEntrar.setForeground(new Color(153, 204, 204));
+		btnEntrar.setForeground(new Color(153, 204, 204));								 // parametros del boton entrar
 		btnEntrar.setBackground(new Color(153, 204, 204));
 		btnEntrar.setBounds(568, 425, 156, 51);
 		contentPane.add(btnEntrar);
 		btnEntrar.setLayout(null);
 		
-		JLabel lblEntrar = new JLabel("ENTRAR");
-		lblEntrar.setBounds(0, 0, 156, 51);
-		btnEntrar.add(lblEntrar);
+		JLabel lblEntrar = new JLabel("ENTRAR");																		
+		lblEntrar.setBounds(0, 0, 156, 51);													// label del boton entrar
+		btnEntrar.add(lblEntrar);	
 		lblEntrar.setBorder(new LineBorder(new Color(0, 0, 0)));
 		lblEntrar.addMouseListener(new MouseAdapter() {
 			@Override
