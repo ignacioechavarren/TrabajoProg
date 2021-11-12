@@ -143,7 +143,7 @@ public class VentanaRegistrar extends JFrame {
 		// un label donde indicaremos la accion "iniciar sesion"
 
 		JLabel lblInicia = new JLabel("Inicia sesi\u00F3n");
-		lblInicia.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+		lblInicia.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR)); // para que aparezca una mano en vez de una flecha
 		lblInicia.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) { // si el mouse es clicado, volveremos a VentanaLogin
