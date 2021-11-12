@@ -42,11 +42,9 @@ public class VentanaLogin extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblPanel = new JLabel("panel");
-		lblPanel.setForeground(Color.WHITE);
-		lblPanel.setHorizontalAlignment(SwingConstants.CENTER);
-		
-		
+
+
+
 		
 
 		
