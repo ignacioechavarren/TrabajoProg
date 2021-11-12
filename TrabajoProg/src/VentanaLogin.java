@@ -7,11 +7,8 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 import javax.swing.ImageIcon;
->>>>>>> branch 'master' of https://github.com/ignacioechavarren/TrabajoProg.git
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -85,8 +82,6 @@ public class VentanaLogin extends JFrame {
 		lblTitule.setBounds(425, 89, 328, 51);
 		contentPane.add(lblTitule);
 		
-<<<<<<< HEAD
-=======
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -94,9 +89,9 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.border.LineBorder;
 
-public class VentanaLogin extends JFrame {
+	public class VentanaLogin extends JFrame {
 	
-	private JPanel contentPane;
+		private JPanel contentPane;
 	
 
 
@@ -130,16 +125,11 @@ public class VentanaLogin extends JFrame {
 		
 
 
-
-		
-
->>>>>>> branch 'master' of https://github.com/ignacioechavarren/TrabajoProg.git
-=======
 		JLabel lblUser = new JLabel("USUARIO");
 		lblUser.setFont(new Font("Arial Black", Font.PLAIN, 17));                           // label de usuario
 		lblUser.setBounds(454, 220, 101, 30);
 		contentPane.add(lblUser);
->>>>>>> branch 'master' of https://github.com/ignacioechavarren/TrabajoProg.git
+
 		
 		JLabel lblContraseña = new JLabel("CONTRASENA");
 		lblContraseña.setForeground(Color.BLACK);                                            //label contrasena
@@ -161,8 +151,8 @@ public class VentanaLogin extends JFrame {
 		txtUsuario.setBorder(null);
 		txtUsuario.setToolTipText("");
 		txtUsuario.setBackground(Color.WHITE);
-		txtUsuario.setFont(new Font("Arial Black", Font.PLAIN, 13));
-		txtUsuario.setForeground(Color.LIGHT_GRAY);
+		txtUsuario.setFont(new Font("Arial Black", Font.PLAIN, 13));								//parametros usuario
+		txtUsuario.setForeground(Color.LIGHT_GRAY);															
 		txtUsuario.setText("Ingrese su nombre de usuario");
 		txtUsuario.setBounds(454, 257, 270, 30);
 		contentPane.add(txtUsuario);
@@ -182,8 +172,8 @@ public class VentanaLogin extends JFrame {
 		txtPass.setText("********");
 		txtPass.setSelectedTextColor(Color.WHITE);
 		txtPass.setToolTipText("");
-		txtPass.setFont(new Font("Arial Black", Font.PLAIN, 13));
-		txtPass.setHorizontalAlignment(SwingConstants.LEFT);
+		txtPass.setFont(new Font("Arial Black", Font.PLAIN, 13));									//parametros contraseña
+		txtPass.setHorizontalAlignment(SwingConstants.LEFT);										
 		txtPass.setBackground(Color.WHITE);
 		txtPass.setForeground(Color.LIGHT_GRAY);
 		txtPass.setBounds(454, 350, 270, 30);
@@ -223,6 +213,7 @@ public class VentanaLogin extends JFrame {
 		lblEntrar.setFont(new Font("Arial Black", Font.PLAIN, 17));
 		
 		JPanel panel_move = new JPanel();
+		
 		panel_move.addMouseMotionListener(new MouseMotionAdapter() {
 			@Override
 			public void mouseDragged(MouseEvent e) { // cuando el mouse es arrastrado
@@ -256,7 +247,7 @@ public class VentanaLogin extends JFrame {
 		
 		JPanel btnSalir = new JPanel();
 		btnSalir.setBackground(Color.WHITE);
-		btnSalir.setForeground(Color.BLACK);
+		btnSalir.setForeground(Color.BLACK);										//parametros boton salir
 		btnSalir.setBounds(742, 0, 58, 58);
 		contentPane.add(btnSalir);
 		btnSalir.setLayout(null);
