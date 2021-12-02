@@ -27,7 +27,6 @@ public class VentanaLogin extends JFrame {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
 	private Image img_user = new ImageIcon(VentanaLogin.class.getResource("imagenes/gente.png")).getImage().getScaledInstance(30, 30, Image.SCALE_DEFAULT);
 	private Image img_lock = new ImageIcon(VentanaLogin.class.getResource("imagenes/candado.png")).getImage().getScaledInstance(30, 30, Image.SCALE_DEFAULT);
 	private Image img_eye = new ImageIcon(VentanaLogin.class.getResource("imagenes/eye.png")).getImage().getScaledInstance(30, 30, Image.SCALE_DEFAULT);
