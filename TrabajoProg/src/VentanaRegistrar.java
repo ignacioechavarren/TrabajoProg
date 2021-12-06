@@ -85,7 +85,7 @@ public class VentanaRegistrar extends JFrame {
 		// Creamos un panel para despues agregar color a la hora de que el mouse se
 		// acerque
 
-		JPanel btnSalir = new JPanel();
+		final JPanel btnSalir = new JPanel();
 		btnSalir.setBackground(new Color(153, 204, 204));
 		btnSalir.setBounds(540, 0, 60, 58);
 		contentPane.add(btnSalir);
@@ -233,7 +233,7 @@ public class VentanaRegistrar extends JFrame {
 //		13- Boton incia sesion: boton que nos devolvera a la ventana iniciar sesion
 		// un label donde indicaremos la accion "iniciar sesion"
 
-		JLabel lblInicia = new JLabel("Inicia sesion");
+		final JLabel lblInicia = new JLabel("Inicia sesion");
 		lblInicia.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR)); // para que aparezca una mano en vez de una
 																				// flecha
 		lblInicia.addMouseListener(new MouseAdapter() {

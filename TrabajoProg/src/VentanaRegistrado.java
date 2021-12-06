@@ -96,7 +96,7 @@ public class VentanaRegistrado extends JFrame {
 		contentPane.add(panelIzq);
 		panelIzq.setLayout(null);
 		
-		JPanel panelIni = new JPanel();
+		final JPanel panelIni = new JPanel();
 		panelIni.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		panelIni.addMouseListener(new MouseAdapter() {
 			@Override
@@ -129,7 +129,7 @@ public class VentanaRegistrado extends JFrame {
 		lblNewLabel_5_1_1.setBounds(10, 10, 56, 52);
 		panelIni.add(lblNewLabel_5_1_1);
 		
-		JPanel panelBus = new JPanel();
+		final JPanel panelBus = new JPanel();
 		panelBus.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		panelBus.addMouseListener(new MouseAdapter() {
 			@Override
@@ -163,7 +163,7 @@ public class VentanaRegistrado extends JFrame {
 		lblNewLabel_5_1.setBounds(10, 10, 56, 52);
 		panelBus.add(lblNewLabel_5_1);
 		
-		JPanel panelVen = new JPanel();
+		final JPanel panelVen = new JPanel();
 		panelVen.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		panelVen.addMouseListener(new MouseAdapter() {
 			@Override
@@ -196,7 +196,7 @@ public class VentanaRegistrado extends JFrame {
 		lblNewLabel_5_1_2.setBounds(10, 10, 56, 52);
 		panelVen.add(lblNewLabel_5_1_2);
 		
-		JPanel panelMen = new JPanel();
+		final JPanel panelMen = new JPanel();
 		panelMen.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		panelMen.addMouseListener(new MouseAdapter() {
 			@Override
@@ -229,7 +229,7 @@ public class VentanaRegistrado extends JFrame {
 		lblNewLabel_5_1_3.setBounds(10, 10, 56, 52);
 		panelMen.add(lblNewLabel_5_1_3);
 		
-		JPanel panelPer = new JPanel();
+		final JPanel panelPer = new JPanel();
 		panelPer.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		panelPer.addMouseListener(new MouseAdapter() {
 			@Override

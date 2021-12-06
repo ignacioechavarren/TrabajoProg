@@ -86,7 +86,7 @@ public class VentanaInicio extends JFrame {
 		contentPane.add(panelIzq);
 		panelIzq.setLayout(null);
 		
-		JPanel panelMu = new JPanel();
+		final JPanel panelMu = new JPanel();
 		panelMu.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		panelMu.addMouseListener(new MouseAdapter() {
 			@Override
@@ -113,7 +113,7 @@ public class VentanaInicio extends JFrame {
 		lblNewLabel_1.setBounds(64, 21, 200, 29);
 		panelMu.add(lblNewLabel_1);
 		
-		JPanel panelHom = new JPanel();
+		final JPanel panelHom = new JPanel();
 		panelHom.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		panelHom.addMouseListener(new MouseAdapter() {
 			@Override
@@ -141,7 +141,7 @@ public class VentanaInicio extends JFrame {
 		lblNewLabel_2.setBounds(65, 22, 200, 29);
 		panelHom.add(lblNewLabel_2);
 		
-		JPanel panelNi = new JPanel();
+		final JPanel panelNi = new JPanel();
 		panelNi.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		panelNi.addMouseListener(new MouseAdapter() {
 			@Override
@@ -168,7 +168,7 @@ public class VentanaInicio extends JFrame {
 		lblNewLabel_3.setBounds(66, 26, 200, 23);
 		panelNi.add(lblNewLabel_3);
 		
-		JPanel panelHo = new JPanel();
+		final JPanel panelHo = new JPanel();
 		panelHo.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		panelHo.addMouseListener(new MouseAdapter() {
 			@Override
@@ -195,7 +195,7 @@ public class VentanaInicio extends JFrame {
 		lblNewLabel_4.setBounds(66, 24, 188, 27);
 		panelHo.add(lblNewLabel_4);
 		
-		JPanel panelSob = new JPanel();
+		final JPanel panelSob = new JPanel();
 		panelSob.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		panelSob.addMouseListener(new MouseAdapter() {
 			@Override
@@ -222,7 +222,7 @@ public class VentanaInicio extends JFrame {
 		lblNewLabel_6.setBounds(65, 25, 229, 24);
 		panelSob.add(lblNewLabel_6);
 		
-		JPanel panelPlat = new JPanel();
+		final JPanel panelPlat = new JPanel();
 		panelPlat.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		panelPlat.addMouseListener(new MouseAdapter() {
 			@Override
@@ -261,7 +261,7 @@ public class VentanaInicio extends JFrame {
 		separator_1.setBounds(479, 50, 532, 2);
 		contentPane.add(separator_1);
 		
-		JLabel lblRegistrar = new JLabel("REGISTRATE | INICIA SESI\u00D3N");
+		final JLabel lblRegistrar = new JLabel("REGISTRATE | INICIA SESI\u00D3N");
 		lblRegistrar.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		lblRegistrar.addMouseListener(new MouseAdapter() {
 			@Override
@@ -284,7 +284,7 @@ public class VentanaInicio extends JFrame {
 		lblRegistrar.setBounds(1028, 16, 228, 32);
 		contentPane.add(lblRegistrar);
 		
-		JLabel lblSubirP = new JLabel("SUBIR PRODUCTO");
+		final JLabel lblSubirP = new JLabel("SUBIR PRODUCTO");
 		lblSubirP.setBorder(new LineBorder(Color.BLACK));
 		lblSubirP.setBackground(Color.WHITE);
 		lblSubirP.setForeground(Color.BLACK);

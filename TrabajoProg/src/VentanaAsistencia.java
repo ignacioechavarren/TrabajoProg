@@ -31,6 +31,7 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.JTextArea;
 import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
+import javax.swing.JTextPane;
 
 public class VentanaAsistencia extends JFrame {
 
@@ -73,6 +74,8 @@ public class VentanaAsistencia extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 //		setBounds(100, 100, 1564, 882); 838
 		setExtendedState(MAXIMIZED_BOTH);
+		
+		
 		setSize(1561, 838);
 		setLocationRelativeTo(null); // la ventana se mantiene en el centro de la pantalla
 		contentPane = new JPanel();
@@ -90,7 +93,7 @@ public class VentanaAsistencia extends JFrame {
 		contentPane.add(panelIzq);
 		panelIzq.setLayout(null);
 		
-		JPanel panelCom = new JPanel();
+		final JPanel panelCom = new JPanel();
 		panelCom.setBounds(665, 10, 212, 29);
 		panelIzq.add(panelCom);
 		panelCom.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
@@ -118,7 +121,7 @@ public class VentanaAsistencia extends JFrame {
 		lblNewLabel_6.setBounds(10, 0, 192, 30);
 		panelCom.add(lblNewLabel_6);
 		
-		JPanel panelVen = new JPanel();
+		final JPanel panelVen = new JPanel();
 		panelVen.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		panelVen.addMouseListener(new MouseAdapter() {
 			@Override
@@ -146,7 +149,7 @@ public class VentanaAsistencia extends JFrame {
 		lblNewLabel_6_1.setBounds(10, 0, 192, 31);
 		panelVen.add(lblNewLabel_6_1);
 		
-		JPanel panelCov = new JPanel();
+		final JPanel panelCov = new JPanel();
 		panelCov.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		panelCov.addMouseListener(new MouseAdapter() {
 			@Override
@@ -174,7 +177,7 @@ public class VentanaAsistencia extends JFrame {
 		lblNewLabel_6_1_1.setBounds(10, 0, 192, 29);
 		panelCov.add(lblNewLabel_6_1_1);
 		
-		JPanel panelIni = new JPanel();
+		final JPanel panelIni = new JPanel();
 		panelIni.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		panelIni.addMouseListener(new MouseAdapter() {
 			@Override
@@ -202,7 +205,7 @@ public class VentanaAsistencia extends JFrame {
 		lblNewLabel_6_1_2.setBounds(10, 0, 192, 29);
 		panelIni.add(lblNewLabel_6_1_2);
 		
-		JPanel panelEnv = new JPanel();
+		final JPanel panelEnv = new JPanel();
 		panelEnv.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		panelEnv.addMouseListener(new MouseAdapter() {
 			@Override
@@ -230,7 +233,7 @@ public class VentanaAsistencia extends JFrame {
 		lblNewLabel_6_1_3.setBounds(10, 0, 192, 30);
 		panelEnv.add(lblNewLabel_6_1_3);
 		
-		JPanel panelSegu = new JPanel();
+		final JPanel panelSegu = new JPanel();
 		panelSegu.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		panelSegu.addMouseListener(new MouseAdapter() {
 			@Override
@@ -258,7 +261,7 @@ public class VentanaAsistencia extends JFrame {
 		lblNewLabel_6_1_4.setBounds(10, 0, 192, 30);
 		panelSegu.add(lblNewLabel_6_1_4);
 		
-		JPanel panelComu = new JPanel();
+		final JPanel panelComu = new JPanel();
 		panelComu.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		panelComu.addMouseListener(new MouseAdapter() {
 			@Override
@@ -299,7 +302,7 @@ public class VentanaAsistencia extends JFrame {
 		separator_1.setForeground(Color.BLACK);
 		contentPane.add(separator_1);
 		
-		JLabel lblRegistrar = new JLabel("REGISTRATE | INICIA SESI\u00D3N");
+		final JLabel lblRegistrar = new JLabel("REGISTRATE | INICIA SESI\u00D3N");
 		lblRegistrar.setBounds(1028, 16, 228, 32);
 		lblRegistrar.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		lblRegistrar.addMouseListener(new MouseAdapter() {
@@ -322,7 +325,7 @@ public class VentanaAsistencia extends JFrame {
 		lblRegistrar.setFont(new Font("Arial Black", Font.PLAIN, 11));
 		contentPane.add(lblRegistrar);
 		
-		JLabel lblSubirP = new JLabel("SUBIR PRODUCTO");
+		final JLabel lblSubirP = new JLabel("SUBIR PRODUCTO");
 		lblSubirP.setBounds(1256, 16, 191, 32);
 		lblSubirP.setBorder(new LineBorder(Color.BLACK));
 		lblSubirP.setBackground(Color.WHITE);
@@ -392,7 +395,7 @@ public class VentanaAsistencia extends JFrame {
 		lblNewLabel_2.setBounds(88, 10, 440, 80);
 		panelInicio.add(lblNewLabel_2);
 		
-		JPanel panCovid = new JPanel();
+		final JPanel panCovid = new JPanel();
 		panCovid.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseEntered(MouseEvent e) {
@@ -425,7 +428,7 @@ public class VentanaAsistencia extends JFrame {
 		lblNewLabel_4.setBounds(33, 184, 194, 40);
 		panCovid.add(lblNewLabel_4);
 		
-		JPanel panVender = new JPanel();
+		final JPanel panVender = new JPanel();
 		panVender.setBackground(Color.WHITE);
 		panVender.addMouseListener(new MouseAdapter() {
 			@Override
@@ -458,7 +461,7 @@ public class VentanaAsistencia extends JFrame {
 		lblNewLabel_4_1.setBounds(33, 184, 194, 40);
 		panVender.add(lblNewLabel_4_1);
 		
-		JPanel panComprar = new JPanel();
+		final JPanel panComprar = new JPanel();
 		panComprar.setBackground(Color.WHITE);
 		panComprar.addMouseListener(new MouseAdapter() {
 			@Override
@@ -491,7 +494,7 @@ public class VentanaAsistencia extends JFrame {
 		lblNewLabel_4_2.setBounds(33, 184, 194, 40);
 		panComprar.add(lblNewLabel_4_2);
 		
-		JPanel panEnvios = new JPanel();
+		final JPanel panEnvios = new JPanel();
 		panEnvios.setBackground(Color.WHITE);
 		panEnvios.addMouseListener(new MouseAdapter() {
 			@Override
@@ -524,7 +527,7 @@ public class VentanaAsistencia extends JFrame {
 		lblNewLabel_4_3.setBounds(33, 184, 194, 40);
 		panEnvios.add(lblNewLabel_4_3);
 		
-		JPanel panSeguridad = new JPanel();
+		final JPanel panSeguridad = new JPanel();
 		panSeguridad.setBackground(Color.WHITE);
 		panSeguridad.addMouseListener(new MouseAdapter() {
 			@Override
@@ -557,7 +560,7 @@ public class VentanaAsistencia extends JFrame {
 		lblNewLabel_4_4.setBounds(33, 184, 194, 40);
 		panSeguridad.add(lblNewLabel_4_4);
 		
-		JPanel panComunidad = new JPanel();
+		final JPanel panComunidad = new JPanel();
 		panComunidad.setBackground(Color.WHITE);
 		panComunidad.addMouseListener(new MouseAdapter() {
 			@Override
@@ -602,26 +605,41 @@ public class VentanaAsistencia extends JFrame {
 		panelCovid.setLayout(null);
 		
 		JLabel lblNewLabel_5 = new JLabel("QUE ES EL COVID-19");
+		lblNewLabel_5.setBounds(63, 10, 363, 45);
 		lblNewLabel_5.setFont(new Font("Arial", Font.PLAIN, 20));
 		lblNewLabel_5.setHorizontalAlignment(SwingConstants.LEFT);
-		lblNewLabel_5.setBounds(63, 10, 363, 45);
 		panelCovid.add(lblNewLabel_5);
 		
-		JTextArea textArea = new JTextArea();
-		textArea.setBorder(new LineBorder(new Color(0, 0, 0)));
-		textArea.setBounds(63, 54, 630, 277);
-		panelCovid.add(textArea);
+		JTextArea txtrHola = new JTextArea();
+		txtrHola.setBounds(-11, 40, 641, 277);
+		txtrHola.setBorder(new LineBorder(new Color(0, 0, 0)));
+		panelCovid.add(txtrHola);
 		
 		JTextArea textArea_1 = new JTextArea();
-		textArea_1.setBorder(new LineBorder(new Color(0, 0, 0)));
 		textArea_1.setBounds(825, 345, 630, 277);
+		textArea_1.setBorder(new LineBorder(new Color(0, 0, 0)));
 		panelCovid.add(textArea_1);
 		
 		JLabel lblNewLabel_5_1 = new JLabel("PRECAUCI\u00D3N CONTRA COVID-19");
+		lblNewLabel_5_1.setBounds(825, 299, 363, 45);
 		lblNewLabel_5_1.setHorizontalAlignment(SwingConstants.LEFT);
 		lblNewLabel_5_1.setFont(new Font("Arial", Font.PLAIN, 20));
-		lblNewLabel_5_1.setBounds(825, 299, 363, 45);
 		panelCovid.add(lblNewLabel_5_1);
+		
+		JTextPane txtTextoCovid = new JTextPane();
+		txtTextoCovid.setText("La enfermedad por coronavirus (COVID\u201119) es una enfermedad infecciosa provocada por el virus SARS-CoV-2.\r\nLa mayor\u00EDa de las personas que padecen COVID\u201119 sufren s\u00EDntomas de intensidad leve a moderada y se recuperan sin necesidad de tratamientos especiales. Sin embargo, algunas personas desarrollan casos graves y necesitan atenci\u00F3n m\u00E9dica.\r\nEn este caso nuestra tienda tiene varias medidas al respecto para as\u00ED evitar problemas futuros");
+		txtTextoCovid.setBounds(35, 65, 363, 45);
+		panelCovid.add(txtTextoCovid);
+		
+		JTextPane txtpnPrecaucionCovid = new JTextPane();
+		txtpnPrecaucionCovid.setText("L\u00E1vate las manos minuciosa y frecuentemente durante al menos 20 segundos para eliminar los virus. Nuestros productos est\u00E1n perfextamente controlados y desinfectados para que no llegue ning\u00FAn tipo de germen al cliente\r\nEvita tocarte la cara. De esta manera, reduces las posibilidades de que el virus se transfiera de tus manos a tus ojos, nariz o boca. \r\nT\u00E1pate la nariz y la boca con un pa\u00F1uelo cuando tosas o estornudes, y t\u00EDralo y l\u00E1vate las manos inmediatamente despu\u00E9s. Tambi\u00E9n puedes taparte con la manga o la parte interior del codo, pero no uses las manos para evitar propagar el virus.\r\nMant\u00E9n una distancia de seguridad de al menos 2 metros, especialmente si alguien tose o estornuda; as\u00ED tendr\u00E1s menos probabilidades de contagiarte. Presta especial atenci\u00F3n si vives con alguien de un grupo de riesgo.\r\nSi no te sientes bien, qu\u00E9date en casa.\r\nSi empiezas a tener fiebre y tos o te cuesta respirar, solicita asistencia m\u00E9dica.\r\nDa prioridad a tu salud y la de tu comunidad y sigue las recomendaciones de las autoridades locales e internacionales.\r\nNuestra tienda intenta en todo lo posible que te contagies as\u00ED que toma varias medidas de precauci\u00F3n al respecto ");
+		txtpnPrecaucionCovid.setBounds(870, 381, 249, 123);
+		panelCovid.add(txtpnPrecaucionCovid);
+		
+		JLabel lblNewLabel_7 = new JLabel("");
+		lblNewLabel_7.setIcon(new ImageIcon(VentanaAsistencia.class.getResource("/Imagenes/33. COVID-19.png")));
+		lblNewLabel_7.setBounds(692, 28, 427, 260);
+		panelCovid.add(lblNewLabel_7);
 		
 		// panelVender
 		

@@ -141,7 +141,7 @@ public class VentanaLogin extends JFrame {
 		txtPass.setBounds(454, 350, 270, 30);
 		contentPane.add(txtPass);
 		
-		JPanel btnEntrar = new JPanel();
+		final JPanel btnEntrar = new JPanel();
 		btnEntrar.setForeground(new Color(153, 204, 204));								 // parametros del boton entrar
 		btnEntrar.setBackground(new Color(153, 204, 204));
 		btnEntrar.setBounds(568, 425, 156, 51);
@@ -207,7 +207,7 @@ public class VentanaLogin extends JFrame {
 		separator_1.setBounds(454, 381, 270, 10);
 		contentPane.add(separator_1);
 		
-		JPanel btnSalir = new JPanel();
+		final JPanel btnSalir = new JPanel();
 		btnSalir.setBackground(Color.WHITE);
 		btnSalir.setForeground(Color.BLACK);										//parametros boton salir
 		btnSalir.setBounds(742, 0, 58, 58);
@@ -259,7 +259,7 @@ public class VentanaLogin extends JFrame {
 		contentPane.add(btnRegis);
 		btnRegis.setLayout(null);
 		
-		JLabel lblAqui = new JLabel("aqui");
+		final JLabel lblAqui = new JLabel("aqui");
 		lblAqui.setForeground(Color.BLACK);
 		lblAqui.addMouseListener(new MouseAdapter() {
 			@Override
@@ -283,7 +283,7 @@ public class VentanaLogin extends JFrame {
 		lblAqui.setFont(new Font("Arial Black", Font.PLAIN, 13));
 		lblAqui.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		
-		JPanel btnEye = new JPanel();
+		final JPanel btnEye = new JPanel();
 		btnEye.setBackground(Color.WHITE);
 		btnEye.setBounds(454, 390, 46, 40);
 		contentPane.add(btnEye);
