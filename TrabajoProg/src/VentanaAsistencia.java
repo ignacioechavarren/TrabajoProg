@@ -605,35 +605,29 @@ public class VentanaAsistencia extends JFrame {
 		panelCovid.setLayout(null);
 		
 		JLabel lblNewLabel_5 = new JLabel("QUE ES EL COVID-19");
+		lblNewLabel_5.setForeground(new Color(50, 205, 50));
 		lblNewLabel_5.setBounds(63, 10, 363, 45);
 		lblNewLabel_5.setFont(new Font("Arial", Font.PLAIN, 20));
 		lblNewLabel_5.setHorizontalAlignment(SwingConstants.LEFT);
 		panelCovid.add(lblNewLabel_5);
 		
-		JTextArea txtrHola = new JTextArea();
-		txtrHola.setBounds(-11, 40, 641, 277);
-		txtrHola.setBorder(new LineBorder(new Color(0, 0, 0)));
-		panelCovid.add(txtrHola);
-		
-		JTextArea textArea_1 = new JTextArea();
-		textArea_1.setBounds(825, 345, 630, 277);
-		textArea_1.setBorder(new LineBorder(new Color(0, 0, 0)));
-		panelCovid.add(textArea_1);
-		
 		JLabel lblNewLabel_5_1 = new JLabel("PRECAUCI\u00D3N CONTRA COVID-19");
+		lblNewLabel_5_1.setForeground(new Color(50, 205, 50));
 		lblNewLabel_5_1.setBounds(825, 299, 363, 45);
 		lblNewLabel_5_1.setHorizontalAlignment(SwingConstants.LEFT);
 		lblNewLabel_5_1.setFont(new Font("Arial", Font.PLAIN, 20));
 		panelCovid.add(lblNewLabel_5_1);
 		
 		JTextPane txtTextoCovid = new JTextPane();
-		txtTextoCovid.setText("La enfermedad por coronavirus (COVID\u201119) es una enfermedad infecciosa provocada por el virus SARS-CoV-2.\r\nLa mayor\u00EDa de las personas que padecen COVID\u201119 sufren s\u00EDntomas de intensidad leve a moderada y se recuperan sin necesidad de tratamientos especiales. Sin embargo, algunas personas desarrollan casos graves y necesitan atenci\u00F3n m\u00E9dica.\r\nEn este caso nuestra tienda tiene varias medidas al respecto para as\u00ED evitar problemas futuros");
-		txtTextoCovid.setBounds(35, 65, 363, 45);
+		txtTextoCovid.setFont(new Font("Times New Roman", Font.PLAIN, 13));
+		txtTextoCovid.setText("La enfermedad por coronavirus (COVID\u201119) es una enfermedad infecciosa provocada por el virus SARS-CoV-2.\r\n\r\nLa mayor\u00EDa de las personas que padecen COVID\u201119 sufren s\u00EDntomas de intensidad leve a moderada y se recuperan sin necesidad de tratamientos especiales. \r\nSin embargo, algunas personas desarrollan casos graves y necesitan atenci\u00F3n m\u00E9dica.\r\n\r\nEn este caso nuestra tienda tiene varias medidas al respecto para as\u00ED evitar problemas futuros");
+		txtTextoCovid.setBounds(35, 65, 427, 187);
 		panelCovid.add(txtTextoCovid);
 		
 		JTextPane txtpnPrecaucionCovid = new JTextPane();
-		txtpnPrecaucionCovid.setText("L\u00E1vate las manos minuciosa y frecuentemente durante al menos 20 segundos para eliminar los virus. Nuestros productos est\u00E1n perfextamente controlados y desinfectados para que no llegue ning\u00FAn tipo de germen al cliente\r\nEvita tocarte la cara. De esta manera, reduces las posibilidades de que el virus se transfiera de tus manos a tus ojos, nariz o boca. \r\nT\u00E1pate la nariz y la boca con un pa\u00F1uelo cuando tosas o estornudes, y t\u00EDralo y l\u00E1vate las manos inmediatamente despu\u00E9s. Tambi\u00E9n puedes taparte con la manga o la parte interior del codo, pero no uses las manos para evitar propagar el virus.\r\nMant\u00E9n una distancia de seguridad de al menos 2 metros, especialmente si alguien tose o estornuda; as\u00ED tendr\u00E1s menos probabilidades de contagiarte. Presta especial atenci\u00F3n si vives con alguien de un grupo de riesgo.\r\nSi no te sientes bien, qu\u00E9date en casa.\r\nSi empiezas a tener fiebre y tos o te cuesta respirar, solicita asistencia m\u00E9dica.\r\nDa prioridad a tu salud y la de tu comunidad y sigue las recomendaciones de las autoridades locales e internacionales.\r\nNuestra tienda intenta en todo lo posible que te contagies as\u00ED que toma varias medidas de precauci\u00F3n al respecto ");
-		txtpnPrecaucionCovid.setBounds(870, 381, 249, 123);
+		txtpnPrecaucionCovid.setFont(new Font("Times New Roman", Font.PLAIN, 13));
+		txtpnPrecaucionCovid.setText("-L\u00E1vate las manos minuciosa y frecuentemente durante al menos 20 segundos para eliminar los virus. Nuestros productos est\u00E1n perfextamente controlados y desinfectados para que no llegue ning\u00FAn tipo de germen al cliente.\r\n\r\n-Evita tocarte la cara. De esta manera, reduces las posibilidades de que el virus se transfiera de tus manos a tus ojos, nariz o boca. \r\n\r\n-T\u00E1pate la nariz y la boca con un pa\u00F1uelo cuando tosas o estornudes, y t\u00EDralo y l\u00E1vate las manos inmediatamente despu\u00E9s. Tambi\u00E9n puedes taparte con la manga o la parte interior del codo, pero no uses las manos para evitar propagar el virus.\r\n\r\n-Mant\u00E9n una distancia de seguridad de al menos 2 metros, especialmente si alguien tose o estornuda; as\u00ED tendr\u00E1s menos probabilidades de contagiarte. Presta especial atenci\u00F3n si vives con alguien de un grupo de riesgo.\r\n\r\n-Si no te sientes bien, qu\u00E9date en casa.\r\n\r\n-Si empiezas a tener fiebre y tos o te cuesta respirar, solicita asistencia m\u00E9dica.\r\n\r\n-Da prioridad a tu salud y la de tu comunidad y sigue las recomendaciones de las autoridades locales e internacionales.\r\nNuestra tienda intenta en todo lo posible que te contagies as\u00ED que toma varias medidas de precauci\u00F3n al respecto.");
+		txtpnPrecaucionCovid.setBounds(673, 340, 515, 237);
 		panelCovid.add(txtpnPrecaucionCovid);
 		
 		JLabel lblNewLabel_7 = new JLabel("");
@@ -641,15 +635,114 @@ public class VentanaAsistencia extends JFrame {
 		lblNewLabel_7.setBounds(692, 28, 427, 260);
 		panelCovid.add(lblNewLabel_7);
 		
+		JLabel lblNewLabel_8 = new JLabel("");
+		lblNewLabel_8.setIcon(new ImageIcon(VentanaAsistencia.class.getResource("/Imagenes/icono-manos-limpias.png")));
+		lblNewLabel_8.setBounds(109, 299, 368, 267);
+		panelCovid.add(lblNewLabel_8);
+		
 		// panelVender
 		
 		panelVender = new JPanel();
+		layeredPane_1.setLayer(panelVender, 0);
 		layeredPane_1.add(panelVender, "name_82817623405600");
+		panelVender.setLayout(null);
+		
+		JLabel lblNewLabel_12 = new JLabel("Vende tus articulos ");
+		lblNewLabel_12.setForeground(Color.BLUE);
+		lblNewLabel_12.setFont(new Font("Calibri", Font.PLAIN, 25));
+		lblNewLabel_12.setBounds(57, 0, 268, 63);
+		panelVender.add(lblNewLabel_12);
+		
+		JLabel lblNewLabel_13 = new JLabel("Actualiza tu anuncio");
+		lblNewLabel_13.setFont(new Font("Arial", Font.PLAIN, 20));
+		lblNewLabel_13.setBounds(63, 220, 212, 38);
+		panelVender.add(lblNewLabel_13);
+		
+		JLabel lblNewLabel_14 = new JLabel("Creaci\u00F3n del perfil");
+		lblNewLabel_14.setFont(new Font("Arial", Font.PLAIN, 20));
+		lblNewLabel_14.setBounds(510, 34, 232, 38);
+		panelVender.add(lblNewLabel_14);
+		
+		JLabel lblNewLabel_15 = new JLabel("Destaca entre la gente");
+		lblNewLabel_15.setFont(new Font("Arial", Font.PLAIN, 20));
+		lblNewLabel_15.setBounds(524, 220, 218, 38);
+		panelVender.add(lblNewLabel_15);
+		
+		JTextPane txtpnEstEsUna = new JTextPane();
+		txtpnEstEsUna.setFont(new Font("Times New Roman", Font.PLAIN, 13));
+		txtpnEstEsUna.setText("\u00C9sta es una secci\u00F3n en la cual no muchas tiendas tienen ya que es novedad en el mercado.\r\n\r\nY es que te ofrecen la posibilidad de vender tus productos de formas r\u00E1pida y sencilla,mucho m\u00E1s f\u00E1cil que cualquier otra tienda del mercado.");
+		txtpnEstEsUna.setBounds(53, 57, 232, 157);
+		panelVender.add(txtpnEstEsUna);
+		
+		JTextPane txtpnactualizaLasFotos = new JTextPane();
+		txtpnactualizaLasFotos.setFont(new Font("Times New Roman", Font.PLAIN, 13));
+		txtpnactualizaLasFotos.setText("-Actualiza las fotos de tu anuncio para asegurarte de que el art\u00EDculo se ve claramente para la gente que entre en la tienda y se pueda ver claramente una variedad de fotos de los art\u00EDculos.\r\n\r\n-Mejora el t\u00EDtulo y la descripci\u00F3n. Esto facilitar\u00E1 que los dem\u00E1s miembros encuentren tu art\u00EDculo a trav\u00E9s de la funci\u00F3n de b\u00FAsqueda,  de manera que al buscar los art\u00EDculos relacionados con los tuyos salgan de manera m\u00E1s r\u00E1pida y lleguen a verlo muchos m\u00E1s miembros.\r\n\r\n-Haz un descuento para lotes de art\u00EDculos y anima a los dem\u00E1s miembros a comprar m\u00E1s art\u00EDculos de tu armario, de manera que as\u00ED los miembros est\u00E9n mas pendientes de tus art\u00EDculos debido a tus ofertas.");
+		txtpnactualizaLasFotos.setBounds(52, 269, 333, 254);
+		panelVender.add(txtpnactualizaLasFotos);
+		
+		JTextPane txtpnVerificaTuCuenta = new JTextPane();
+		txtpnVerificaTuCuenta.setFont(new Font("Times New Roman", Font.PLAIN, 13));
+		txtpnVerificaTuCuenta.setText("Verifica tu cuenta para ganarte la confianza de otros miembros, y as\u00ED que no sospechen si les est\u00E1s timando de alguna forma. \r\n\r\nDestaca un poco sobre ti en tu perfil de manera que los miembros sepan de ti algo. \r\nEsta descripci\u00F3n ser\u00E1 visible para toda la comunidad.");
+		txtpnVerificaTuCuenta.setBounds(467, 68, 380, 146);
+		panelVender.add(txtpnVerificaTuCuenta);
+		
+		JTextPane txtpnDestacaTusArtculos = new JTextPane();
+		txtpnDestacaTusArtculos.setFont(new Font("Times New Roman", Font.PLAIN, 13));
+		txtpnDestacaTusArtculos.setText("Destaca tus art\u00EDculos y pon tu armario en escaparate para que vean tus mejores articulos para aumentar la visibilidad de tu armario.\r\n\r\nSube art\u00EDculos nuevos con frecuencia; es decir no seas ausente, te empezar\u00E1n a seguir posibles compradores que recibir\u00E1n una notificaci\u00F3n cuando publiques algo nuevo. Si no tus miembros perder\u00E1n inter\u00E9s en ti y perder\u00E1s fama.\r\n\r\nBaja el precio de tus art\u00EDculos, con un descuento especi\u00EDfico. \r\nLos miembros que te sigan o que hayan incluido tus art\u00EDculos en sus favoritos recibir\u00E1n una notificaci\u00F3n acerca del descuento. ");
+		txtpnDestacaTusArtculos.setBounds(479, 269, 368, 207);
+		panelVender.add(txtpnDestacaTusArtculos);
+		
+		JLabel lblNewLabel_9 = new JLabel("");
+		lblNewLabel_9.setIcon(new ImageIcon(VentanaAsistencia.class.getResource("/Imagenes/dCXUCQz6_400x400.png")));
+		lblNewLabel_9.setBounds(901, 68, 350, 239);
+		panelVender.add(lblNewLabel_9);
 		
 		// panelComprar
 		
 		panelComprar = new JPanel();
 		layeredPane_1.add(panelComprar, "name_82817648632900");
+		panelComprar.setLayout(null);
+		
+		JLabel lblNewLabel_11 = new JLabel("New label");
+		lblNewLabel_11.setBounds(666, 10, 46, 14);
+		panelComprar.add(lblNewLabel_11);
+		
+		JLabel lblNewLabel_10 = new JLabel("New label");
+		lblNewLabel_10.setBounds(717, 10, 46, 14);
+		panelComprar.add(lblNewLabel_10);
+		
+		JLabel lblMtodosDePago = new JLabel("M\u00E9todos de pago");
+		lblMtodosDePago.setFont(new Font("Arial", Font.PLAIN, 20));
+		lblMtodosDePago.setBounds(36, 39, 196, 32);
+		panelComprar.add(lblMtodosDePago);
+		
+		JLabel lblCupones = new JLabel("Cupones");
+		lblCupones.setFont(new Font("Arial", Font.PLAIN, 20));
+		lblCupones.setBounds(36, 268, 196, 28);
+		panelComprar.add(lblCupones);
+		
+		JLabel lblCancelarPedido = new JLabel("Cancelar pedido");
+		lblCancelarPedido.setFont(new Font("Arial", Font.PLAIN, 20));
+		lblCancelarPedido.setBounds(372, 28, 205, 54);
+		panelComprar.add(lblCancelarPedido);
+		
+		JTextPane txtpnTrasUsarEl = new JTextPane();
+		txtpnTrasUsarEl.setFont(new Font("Times New Roman", Font.PLAIN, 13));
+		txtpnTrasUsarEl.setText("Tras usar el bot\u00F3n Comprar , podr\u00E1s elegir el m\u00E9todo de pago para tu pedido. Los m\u00E9todos de pago disponibles en nuestra tienda son:\r\n\r\n1. Tarjeta de cr\u00E9dito/d\u00E9bito\r\nAceptamos todas las tarjetas principales de cr\u00E9dito o d\u00E9bito.\r\n\r\n2. PayPal\r\n");
+		txtpnTrasUsarEl.setBounds(28, 80, 278, 177);
+		panelComprar.add(txtpnTrasUsarEl);
+		
+		JTextPane txtpnSimplementeEncuentraUn = new JTextPane();
+		txtpnSimplementeEncuentraUn.setFont(new Font("Times New Roman", Font.PLAIN, 13));
+		txtpnSimplementeEncuentraUn.setText("Simplemente encuentra un art\u00EDculo que te guste y haz clic en Comprar.\r\nEl cup\u00F3n se aplicar\u00E1 a la compra autom\u00E1ticamente, teniendo en cuenta si tiene cup\u00F3n o no.\r\n\r\n Lo podr\u00E1s comprobar a la hora de ver los detalles de pago y ver si se ha aplicado el descuento del cup\u00F3n.");
+		txtpnSimplementeEncuentraUn.setBounds(36, 308, 306, 162);
+		panelComprar.add(txtpnSimplementeEncuentraUn);
+		
+		JTextPane txtpnSiSeHa = new JTextPane();
+		txtpnSiSeHa.setFont(new Font("Times New Roman", Font.PLAIN, 13));
+		txtpnSiSeHa.setText("Si se ha hecho la compra de un pedido, y finalmente se quiere cancelar,\r\nexiste esa opci\u00F3n de poder hacerlo de manera sencilla.\r\n\r\nSolamente tendr\u00E1 que seleccionar los pedidos que haya hecho y tendr\u00E1 la opci\u00F3n de hacerlo sin gasto alguno en el plaz antes de que llegue al cliente en cuesti\u00F3n.");
+		txtpnSiSeHa.setBounds(368, 80, 230, 177);
+		panelComprar.add(txtpnSiSeHa);
 		
 		// panelEnvios
 		
@@ -665,5 +758,9 @@ public class VentanaAsistencia extends JFrame {
 		
 		panelComunidad = new JPanel();
 		layeredPane_1.add(panelComunidad, "name_82817719712100");
+		
+		JTextPane textPane = new JTextPane();
+		textPane.setBounds(0, 182, 297, 81);
+		contentPane.add(textPane);
 	}
 }
