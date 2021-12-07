@@ -619,12 +619,14 @@ public class VentanaAsistencia extends JFrame {
 		panelCovid.add(lblNewLabel_5_1);
 		
 		JTextPane txtTextoCovid = new JTextPane();
+		txtTextoCovid.setEditable(false);
 		txtTextoCovid.setFont(new Font("Times New Roman", Font.PLAIN, 13));
 		txtTextoCovid.setText("La enfermedad por coronavirus (COVID\u201119) es una enfermedad infecciosa provocada por el virus SARS-CoV-2.\r\n\r\nLa mayor\u00EDa de las personas que padecen COVID\u201119 sufren s\u00EDntomas de intensidad leve a moderada y se recuperan sin necesidad de tratamientos especiales. \r\nSin embargo, algunas personas desarrollan casos graves y necesitan atenci\u00F3n m\u00E9dica.\r\n\r\nEn este caso nuestra tienda tiene varias medidas al respecto para as\u00ED evitar problemas futuros");
 		txtTextoCovid.setBounds(35, 65, 427, 187);
 		panelCovid.add(txtTextoCovid);
 		
 		JTextPane txtpnPrecaucionCovid = new JTextPane();
+		txtpnPrecaucionCovid.setEditable(false);
 		txtpnPrecaucionCovid.setFont(new Font("Times New Roman", Font.PLAIN, 13));
 		txtpnPrecaucionCovid.setText("-L\u00E1vate las manos minuciosa y frecuentemente durante al menos 20 segundos para eliminar los virus. Nuestros productos est\u00E1n perfextamente controlados y desinfectados para que no llegue ning\u00FAn tipo de germen al cliente.\r\n\r\n-Evita tocarte la cara. De esta manera, reduces las posibilidades de que el virus se transfiera de tus manos a tus ojos, nariz o boca. \r\n\r\n-T\u00E1pate la nariz y la boca con un pa\u00F1uelo cuando tosas o estornudes, y t\u00EDralo y l\u00E1vate las manos inmediatamente despu\u00E9s. Tambi\u00E9n puedes taparte con la manga o la parte interior del codo, pero no uses las manos para evitar propagar el virus.\r\n\r\n-Mant\u00E9n una distancia de seguridad de al menos 2 metros, especialmente si alguien tose o estornuda; as\u00ED tendr\u00E1s menos probabilidades de contagiarte. Presta especial atenci\u00F3n si vives con alguien de un grupo de riesgo.\r\n\r\n-Si no te sientes bien, qu\u00E9date en casa.\r\n\r\n-Si empiezas a tener fiebre y tos o te cuesta respirar, solicita asistencia m\u00E9dica.\r\n\r\n-Da prioridad a tu salud y la de tu comunidad y sigue las recomendaciones de las autoridades locales e internacionales.\r\nNuestra tienda intenta en todo lo posible que te contagies as\u00ED que toma varias medidas de precauci\u00F3n al respecto.");
 		txtpnPrecaucionCovid.setBounds(673, 340, 515, 237);
@@ -727,18 +729,21 @@ public class VentanaAsistencia extends JFrame {
 		panelComprar.add(lblCancelarPedido);
 		
 		JTextPane txtpnTrasUsarEl = new JTextPane();
+		txtpnTrasUsarEl.setEditable(false);
 		txtpnTrasUsarEl.setFont(new Font("Times New Roman", Font.PLAIN, 13));
 		txtpnTrasUsarEl.setText("Tras usar el bot\u00F3n Comprar , podr\u00E1s elegir el m\u00E9todo de pago para tu pedido. Los m\u00E9todos de pago disponibles en nuestra tienda son:\r\n\r\n1. Tarjeta de cr\u00E9dito/d\u00E9bito\r\nAceptamos todas las tarjetas principales de cr\u00E9dito o d\u00E9bito.\r\n\r\n2. PayPal\r\n");
 		txtpnTrasUsarEl.setBounds(28, 80, 278, 177);
 		panelComprar.add(txtpnTrasUsarEl);
 		
 		JTextPane txtpnSimplementeEncuentraUn = new JTextPane();
+		txtpnSimplementeEncuentraUn.setEditable(false);
 		txtpnSimplementeEncuentraUn.setFont(new Font("Times New Roman", Font.PLAIN, 13));
 		txtpnSimplementeEncuentraUn.setText("Simplemente encuentra un art\u00EDculo que te guste y haz clic en Comprar.\r\nEl cup\u00F3n se aplicar\u00E1 a la compra autom\u00E1ticamente, teniendo en cuenta si tiene cup\u00F3n o no.\r\n\r\n Lo podr\u00E1s comprobar a la hora de ver los detalles de pago y ver si se ha aplicado el descuento del cup\u00F3n.");
 		txtpnSimplementeEncuentraUn.setBounds(36, 308, 306, 162);
 		panelComprar.add(txtpnSimplementeEncuentraUn);
 		
 		JTextPane txtpnSiSeHa = new JTextPane();
+		txtpnSiSeHa.setEditable(false);
 		txtpnSiSeHa.setFont(new Font("Times New Roman", Font.PLAIN, 13));
 		txtpnSiSeHa.setText("Si se ha hecho la compra de un pedido, y finalmente se quiere cancelar,\r\nexiste esa opci\u00F3n de poder hacerlo de manera sencilla.\r\n\r\nSolamente tendr\u00E1 que seleccionar los pedidos que haya hecho y tendr\u00E1 la opci\u00F3n de hacerlo sin gasto alguno en el plaz antes de que llegue al cliente en cuesti\u00F3n.");
 		txtpnSiSeHa.setBounds(368, 80, 230, 177);
@@ -748,16 +753,134 @@ public class VentanaAsistencia extends JFrame {
 		
 		panelEnvios = new JPanel();
 		layeredPane_1.add(panelEnvios, "name_82817672869900");
+		panelEnvios.setLayout(null);
+		
+		JLabel lblNewLabel_16 = new JLabel("\u00BFCambiar la direcci\u00F3n de env\u00EDo?");
+		lblNewLabel_16.setFont(new Font("Arial", Font.PLAIN, 20));
+		lblNewLabel_16.setBounds(46, 29, 296, 32);
+		panelEnvios.add(lblNewLabel_16);
+		
+		JTextPane txtCambiarDireccionEnvio = new JTextPane();
+		txtCambiarDireccionEnvio.setText("Cuando compres tu primer art\u00EDculo, te pediremos que introduzcas una direcci\u00F3n de env\u00EDo que se quedar\u00E1 guardada para tus futuras compras.  \r\n\r\nPara cambiar la direcci\u00F3n:\r\n\r\n1- Pulsa sobre el icono de tu perfil \r\n2- Ve a \u201CAjustes\u201D\r\n3- Selecciona \u201CEnv\u00EDos\u201D\r\n4- Pulsa sobre la direcci\u00F3n y ed\u00EDtala");
+		txtCambiarDireccionEnvio.setFont(new Font("Times New Roman", Font.PLAIN, 13));
+		txtCambiarDireccionEnvio.setEditable(false);
+		txtCambiarDireccionEnvio.setBounds(46, 72, 296, 162);
+		panelEnvios.add(txtCambiarDireccionEnvio);
+		
+		JLabel lblNewLabel_17 = new JLabel("");
+		lblNewLabel_17.setIcon(new ImageIcon(VentanaAsistencia.class.getResource("/Imagenes/Envios.png")));
+		lblNewLabel_17.setBounds(984, 53, 296, 181);
+		panelEnvios.add(lblNewLabel_17);
+		
+		JLabel lblNewLabel_18 = new JLabel("\u00BFC\u00F3mo funcionan los envios?");
+		lblNewLabel_18.setFont(new Font("Arial", Font.PLAIN, 20));
+		lblNewLabel_18.setBounds(466, 26, 269, 39);
+		panelEnvios.add(lblNewLabel_18);
+		
+		JTextPane txtpnComoFuncionanEnvios = new JTextPane();
+		txtpnComoFuncionanEnvios.setText("\u00BFQui\u00E9n paga por el env\u00EDo?\r\n\r\nEl coste del env\u00EDo siempre corre a cargo del comprador, a este importe se a\u00F1ade al precio del art\u00EDculo como parte del total de la compra.\r\n\r\nTen en cuenta que con algunas opciones de env\u00EDo puede que tengas que pagar ese importe al enviar el art\u00EDculo y, despu\u00E9s, recibir un reembolso.\r\n\r\nEl comprador decide la opci\u00F3n de env\u00EDo\r\n\r\nCuando el comprador compra el art\u00EDculo, selecciona la empresa de paqueter\u00EDa con la que desea que realices el env\u00EDo.\r\n\r\nPlazo para el env\u00EDo\r\n\r\nHay 5 d\u00EDas laborables para enviar un art\u00EDculo vendido. Si no se hace en este plazo, se tendr\u00E1 que cancelar el pedido.");
+		txtpnComoFuncionanEnvios.setEditable(false);
+		txtpnComoFuncionanEnvios.setFont(new Font("Times New Roman", Font.PLAIN, 13));
+		txtpnComoFuncionanEnvios.setBounds(466, 72, 269, 369);
+		panelEnvios.add(txtpnComoFuncionanEnvios);
+		
+		JLabel lblNewLabel_19 = new JLabel("Opciones de entrega");
+		lblNewLabel_19.setFont(new Font("Arial", Font.PLAIN, 20));
+		lblNewLabel_19.setBounds(46, 282, 189, 39);
+		panelEnvios.add(lblNewLabel_19);
+		
+		JTextPane txtpnAlComprarUn = new JTextPane();
+		txtpnAlComprarUn.setText("Al comprar un art\u00EDculo, puedes seleccionar tu opci\u00F3n de entrega preferida para recibir el pedido. Tenemos cuatro opciones diferentes:\r\n\r\n1- En una oficina o tienda de correos de tu elecci\u00F3n. \r\n\r\n2- En tu domicilio.\r\n\r\n3- Con env\u00EDo personalizado.\r\nDepender\u00E1 de la empresa de paqueter\u00EDa que seleccion\u00F3 el vendedor.\r\n\r\n4- Recogida de paquete en persona.\r\nSi el vendedor elige esta opci\u00F3n, simplemente, queda con \u00E9l/ella para recoger el art\u00EDculo. ");
+		txtpnAlComprarUn.setFont(new Font("Times New Roman", Font.PLAIN, 13));
+		txtpnAlComprarUn.setEditable(false);
+		txtpnAlComprarUn.setBounds(46, 321, 296, 246);
+		panelEnvios.add(txtpnAlComprarUn);
+		
+		JLabel lblNewLabel_20 = new JLabel("");
+		lblNewLabel_20.setIcon(new ImageIcon(VentanaAsistencia.class.getResource("/Imagenes/envios2.jpg")));
+		lblNewLabel_20.setBounds(984, 369, 296, 181);
+		panelEnvios.add(lblNewLabel_20);
 		
 		// panelSeguridad
 		
 		panelSeguridad = new JPanel();
 		layeredPane_1.add(panelSeguridad, "name_82817696383300");
+		panelSeguridad.setLayout(null);
+		
+		JLabel lblNewLabel_21 = new JLabel("Que se puede vender");
+		lblNewLabel_21.setFont(new Font("Arial", Font.PLAIN, 20));
+		lblNewLabel_21.setBounds(57, 36, 198, 46);
+		panelSeguridad.add(lblNewLabel_21);
+		
+		JTextPane txtpnArticulosVenta = new JTextPane();
+		txtpnArticulosVenta.setEditable(false);
+		txtpnArticulosVenta.setText("- Ropa, calzado y accesorios de mujer, hombre y ni\u00F1os\r\n\r\n- Juguetes y muebles para ni\u00F1os y productos para su cuidado \r\n\r\n- Cosm\u00E9ticos, perfumes y otros articulos de belleza sin estrenar\r\n\r\n- Accesorios tecnol\u00F3gicos en buen estado\r\n\r\n- Articulos para el hogar");
+		txtpnArticulosVenta.setFont(new Font("Times New Roman", Font.PLAIN, 13));
+		txtpnArticulosVenta.setBounds(57, 93, 227, 245);
+		panelSeguridad.add(txtpnArticulosVenta);
+		
+		JLabel lblNewLabel_22 = new JLabel("Que no se puede vender");
+		lblNewLabel_22.setFont(new Font("Arial", Font.PLAIN, 20));
+		lblNewLabel_22.setBounds(404, 39, 227, 46);
+		panelSeguridad.add(lblNewLabel_22);
+		
+		JTextPane txtpnArticulosNoVenta = new JTextPane();
+		txtpnArticulosNoVenta.setText("- Articulos falsificados\r\n\r\n- Comida, bebida, productos con receta, medicamentos, suministros m\u00E9dicos profesionales, vitaminas, suplementos alimenticios... \r\n\r\n- Art\u00EDculos que incitan o muestran violencia, discriminaci\u00F3n, odio, delincuencia, terrorismo y terrorismo organizado\r\n\r\n- Art\u00EDculos que no cumplen con los est\u00E1ndares de higiene o suponen un riesgo para la salud ");
+		txtpnArticulosNoVenta.setFont(new Font("Times New Roman", Font.PLAIN, 13));
+		txtpnArticulosNoVenta.setEditable(false);
+		txtpnArticulosNoVenta.setBounds(404, 93, 289, 209);
+		panelSeguridad.add(txtpnArticulosNoVenta);
+		
+		JLabel lblNewLabel_23 = new JLabel("Advertencia");
+		lblNewLabel_23.setFont(new Font("Arial", Font.PLAIN, 20));
+		lblNewLabel_23.setBounds(253, 407, 121, 37);
+		panelSeguridad.add(lblNewLabel_23);
+		
+		JTextPane txtpnAdvertencia = new JTextPane();
+		txtpnAdvertencia.setText("Estamos constantemente supervisando el cat\u00E1logo para eliminar los art\u00EDculos prohibidos. Sin embargo, no siempre podemos detectarlos de forma inmediata, por lo que nos ser\u00EDa de gran ayuda que denunciases aquellos anuncios que incumplen nuestras normas.\r\n\r\nSe recomienda que todos los articulos que sean vendidos est\u00E9n en perfectas condiciones, tanto en higiene como en el estado del producto.\r\n\r\nLa web no se hace responsable de cualquier problema con el articulo comprado.");
+		txtpnAdvertencia.setFont(new Font("Times New Roman", Font.PLAIN, 13));
+		txtpnAdvertencia.setBounds(253, 455, 529, 144);
+		panelSeguridad.add(txtpnAdvertencia);
+		
+		JLabel lblNewLabel_24 = new JLabel("");
+		lblNewLabel_24.setIcon(new ImageIcon(VentanaAsistencia.class.getResource("/Imagenes/articulosVenta.jpg")));
+		lblNewLabel_24.setBounds(904, 181, 397, 245);
+		panelSeguridad.add(lblNewLabel_24);
 		
 		// panelComunidad
 		
 		panelComunidad = new JPanel();
 		layeredPane_1.add(panelComunidad, "name_82817719712100");
+		panelComunidad.setLayout(null);
+		
+		JLabel lblNewLabel_25 = new JLabel("Foro");
+		lblNewLabel_25.setFont(new Font("Arial", Font.PLAIN, 20));
+		lblNewLabel_25.setBounds(97, 58, 57, 46);
+		panelComunidad.add(lblNewLabel_25);
+		
+		JTextPane txtpnForo = new JTextPane();
+		txtpnForo.setEditable(false);
+		txtpnForo.setText("El foro es un lugar para mantener conversaciones y apoyar a otros miembros. Hemos creado este espacio pensando en ti, para mantener conversaciones con compradores y vendedores y asi poder preguntar cualquier duda sobre nuestra web.\r\n\r\nEl foro tendra varias normas:\r\n\r\n- Elige la categor\u00EDa correcta del foro y escribe un t\u00EDtulo claro.\r\n\r\n- No se tolerar\u00E1n acusaciones, insultos de cualquier tipo, acoso, spam o troles. Asi como mensajes violentos, de odio, racistas, extremistas, escandalosos, sexistas, discriminatorios, pornogr\u00E1ficos o sexuales.\r\n\r\n- No reveles informaci\u00F3n privada ( direcci\u00F3n, n\u00FAmero de tel\u00E9fono, datos bancarios...)");
+		txtpnForo.setFont(new Font("Times New Roman", Font.PLAIN, 13));
+		txtpnForo.setBounds(97, 115, 300, 323);
+		panelComunidad.add(txtpnForo);
+		
+		JLabel lblNewLabel_26 = new JLabel("Bloquear a un usuario");
+		lblNewLabel_26.setFont(new Font("Arial", Font.PLAIN, 20));
+		lblNewLabel_26.setBounds(574, 58, 202, 46);
+		panelComunidad.add(lblNewLabel_26);
+		
+		JTextPane txtpnBloquearUsuario = new JTextPane();
+		txtpnBloquearUsuario.setText("Si alg\u00FAn usuario te env\u00EDa spam, mensajes de acoso, contenido inapropiado o incurre en cualquier tipo de actividad discriminatoria deber\u00EDas bloquear a dicho miembro:\r\n\r\nPara bloquear a un usuario solo debes seguir estos pasos:\r\n\r\n- Ve al perfil del miembro\r\n\r\n- Pulsa el s\u00EDmbolo de los 3 puntos en la esquina superior derecha\r\n\r\n- Selecciona Bloquear\r\n\r\nEl miembro bloqueado no podr\u00E1 enviarte mensajes o comprar tus art\u00EDculos. Adem\u00E1s, no podr\u00E1s ver sus art\u00EDculos ni sus comentarios en el foro.");
+		txtpnBloquearUsuario.setFont(new Font("Times New Roman", Font.PLAIN, 13));
+		txtpnBloquearUsuario.setEditable(false);
+		txtpnBloquearUsuario.setBounds(574, 115, 339, 323);
+		panelComunidad.add(txtpnBloquearUsuario);
+		
+		JLabel lblNewLabel_27 = new JLabel("\r\n");
+		lblNewLabel_27.setIcon(new ImageIcon(VentanaAsistencia.class.getResource("/Imagenes/comunidad.jpg")));
+		lblNewLabel_27.setBounds(1051, 162, 423, 276);
+		panelComunidad.add(lblNewLabel_27);
 		
 		JTextPane textPane = new JTextPane();
 		textPane.setBounds(0, 182, 297, 81);
