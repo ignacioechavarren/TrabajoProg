@@ -705,14 +705,6 @@ public class VentanaAsistencia extends JFrame {
 		layeredPane_1.add(panelComprar, "name_82817648632900");
 		panelComprar.setLayout(null);
 		
-		JLabel lblNewLabel_11 = new JLabel("New label");
-		lblNewLabel_11.setBounds(666, 10, 46, 14);
-		panelComprar.add(lblNewLabel_11);
-		
-		JLabel lblNewLabel_10 = new JLabel("New label");
-		lblNewLabel_10.setBounds(717, 10, 46, 14);
-		panelComprar.add(lblNewLabel_10);
-		
 		JLabel lblMtodosDePago = new JLabel("M\u00E9todos de pago");
 		lblMtodosDePago.setFont(new Font("Arial", Font.PLAIN, 20));
 		lblMtodosDePago.setBounds(36, 39, 196, 32);
@@ -748,6 +740,11 @@ public class VentanaAsistencia extends JFrame {
 		txtpnSiSeHa.setText("Si se ha hecho la compra de un pedido, y finalmente se quiere cancelar,\r\nexiste esa opci\u00F3n de poder hacerlo de manera sencilla.\r\n\r\nSolamente tendr\u00E1 que seleccionar los pedidos que haya hecho y tendr\u00E1 la opci\u00F3n de hacerlo sin gasto alguno en el plaz antes de que llegue al cliente en cuesti\u00F3n.");
 		txtpnSiSeHa.setBounds(368, 80, 230, 177);
 		panelComprar.add(txtpnSiSeHa);
+		
+		JLabel lblNewLabel_10 = new JLabel("New label");
+		lblNewLabel_10.setIcon(new ImageIcon(VentanaAsistencia.class.getResource("/Imagenes/icono comprar.jpg")));
+		lblNewLabel_10.setBounds(608, 11, 736, 551);
+		panelComprar.add(lblNewLabel_10);
 		
 		// panelEnvios
 		
