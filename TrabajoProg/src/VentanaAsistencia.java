@@ -31,6 +31,9 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.JTextArea;
 import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
+import javax.swing.JTextPane;
+import com.jgoodies.forms.factories.DefaultComponentFactory;
+import javax.swing.JScrollBar;
 
 public class VentanaAsistencia extends JFrame {
 
@@ -607,10 +610,11 @@ public class VentanaAsistencia extends JFrame {
 		lblNewLabel_5.setBounds(63, 10, 363, 45);
 		panelCovid.add(lblNewLabel_5);
 		
-		JTextArea textArea = new JTextArea();
-		textArea.setBorder(new LineBorder(new Color(0, 0, 0)));
-		textArea.setBounds(63, 54, 630, 277);
-		panelCovid.add(textArea);
+		JTextArea txtrDebidoALa = new JTextArea();
+		txtrDebidoALa.setPreferredSize(new Dimension(630, 22));
+		txtrDebidoALa.setBorder(new LineBorder(new Color(0, 0, 0)));
+		txtrDebidoALa.setBounds(63, 54, 649, 163);
+		panelCovid.add(txtrDebidoALa);
 		
 		JTextArea textArea_1 = new JTextArea();
 		textArea_1.setBorder(new LineBorder(new Color(0, 0, 0)));
