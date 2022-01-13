@@ -357,7 +357,7 @@ public class VentanaRegistrado extends JFrame {
 		txtBuscar.setColumns(10);
 		
 		textField = new JTextField();
-		textField.setText(".....");
+		textField.setText("...");
 		textField.setBounds(178, 259, 86, 20);
 		panelBuscar.add(textField);
 		textField.setColumns(10);
