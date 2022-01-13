@@ -163,7 +163,7 @@ public class VentanaLogin extends JFrame {
 			}
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				VentanaInicio newframe = new VentanaInicio();
+				VentanaRegistrado newframe = new VentanaRegistrado();
 				newframe.setVisible(true);
 				dispose();
 			}

@@ -636,6 +636,51 @@ public class VentanaAsistencia extends JFrame {
 		
 		panelComprar = new JPanel();
 		layeredPane_1.add(panelComprar, "name_82817648632900");
+<<<<<<< HEAD
+=======
+		panelComprar.setLayout(null);
+		
+		JLabel lblMtodosDePago = new JLabel("M\u00E9todos de pago");
+		lblMtodosDePago.setFont(new Font("Arial", Font.PLAIN, 20));
+		lblMtodosDePago.setBounds(36, 39, 196, 32);
+		panelComprar.add(lblMtodosDePago);
+		
+		JLabel lblCupones = new JLabel("Cupones");
+		lblCupones.setFont(new Font("Arial", Font.PLAIN, 20));
+		lblCupones.setBounds(36, 268, 196, 28);
+		panelComprar.add(lblCupones);
+		
+		JLabel lblCancelarPedido = new JLabel("Cancelar pedido");
+		lblCancelarPedido.setFont(new Font("Arial", Font.PLAIN, 20));
+		lblCancelarPedido.setBounds(372, 28, 205, 54);
+		panelComprar.add(lblCancelarPedido);
+		
+		JTextPane txtpnTrasUsarEl = new JTextPane();
+		txtpnTrasUsarEl.setEditable(false);
+		txtpnTrasUsarEl.setFont(new Font("Times New Roman", Font.PLAIN, 13));
+		txtpnTrasUsarEl.setText("Tras usar el bot\u00F3n Comprar , podr\u00E1s elegir el m\u00E9todo de pago para tu pedido. Los m\u00E9todos de pago disponibles en nuestra tienda son:\r\n\r\n1. Tarjeta de cr\u00E9dito/d\u00E9bito\r\nAceptamos todas las tarjetas principales de cr\u00E9dito o d\u00E9bito.\r\n\r\n2. PayPal\r\n");
+		txtpnTrasUsarEl.setBounds(28, 80, 278, 177);
+		panelComprar.add(txtpnTrasUsarEl);
+		
+		JTextPane txtpnSimplementeEncuentraUn = new JTextPane();
+		txtpnSimplementeEncuentraUn.setEditable(false);
+		txtpnSimplementeEncuentraUn.setFont(new Font("Times New Roman", Font.PLAIN, 13));
+		txtpnSimplementeEncuentraUn.setText("Simplemente encuentra un art\u00EDculo que te guste y haz clic en Comprar.\r\nEl cup\u00F3n se aplicar\u00E1 a la compra autom\u00E1ticamente, teniendo en cuenta si tiene cup\u00F3n o no.\r\n\r\n Lo podr\u00E1s comprobar a la hora de ver los detalles de pago y ver si se ha aplicado el descuento del cup\u00F3n.");
+		txtpnSimplementeEncuentraUn.setBounds(36, 308, 306, 162);
+		panelComprar.add(txtpnSimplementeEncuentraUn);
+		
+		JTextPane txtpnSiSeHa = new JTextPane();
+		txtpnSiSeHa.setEditable(false);
+		txtpnSiSeHa.setFont(new Font("Times New Roman", Font.PLAIN, 13));
+		txtpnSiSeHa.setText("Si se ha hecho la compra de un pedido, y finalmente se quiere cancelar,\r\nexiste esa opci\u00F3n de poder hacerlo de manera sencilla.\r\n\r\nSolamente tendr\u00E1 que seleccionar los pedidos que haya hecho y tendr\u00E1 la opci\u00F3n de hacerlo sin gasto alguno en el plaz antes de que llegue al cliente en cuesti\u00F3n.");
+		txtpnSiSeHa.setBounds(368, 80, 230, 177);
+		panelComprar.add(txtpnSiSeHa);
+>>>>>>> branch 'master' of https://github.com/ignacioechavarren/TrabajoProg.git
+		
+		JLabel lblNewLabel_10 = new JLabel("New label");
+		lblNewLabel_10.setIcon(new ImageIcon(VentanaAsistencia.class.getResource("/Imagenes/icono comprar.jpg")));
+		lblNewLabel_10.setBounds(608, 11, 736, 551);
+		panelComprar.add(lblNewLabel_10);
 		
 		// panelEnvios
 		

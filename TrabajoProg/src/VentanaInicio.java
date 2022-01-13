@@ -35,6 +35,7 @@ public class VentanaInicio extends JFrame {
 	private JPanel panelNosotros;
 	private JPanel panelPlataforma;
 	private JTextField txtBuscarEnLa;
+	private JTextField txtLoPrimeroQue;
 
 	/**
 	 * Launch the application.
@@ -355,27 +356,87 @@ public class VentanaInicio extends JFrame {
 		// panelIntro
 		
 		panelIntro = new JPanel();
+		panelIntro.setBackground(Color.WHITE);
 		layeredPane.add(panelIntro, "name_64702364051000");
+		panelIntro.setLayout(null);
 		
-		// panelMujer
+		JLabel lblNewLabel_12_1_5 = new JLabel("");
+		lblNewLabel_12_1_5.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\1f.png"));
+		lblNewLabel_12_1_5.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblNewLabel_12_1_5.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_12_1_5.setBounds(155, 0, 830, 354);
+		panelIntro.add(lblNewLabel_12_1_5);
 		
-		panelMujer = new JPanel();
-		layeredPane.add(panelMujer, "name_64702387634800");
+		JLabel lblNewLabel_12_1_6 = new JLabel("");
+		lblNewLabel_12_1_6.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\4m.png"));
+		lblNewLabel_12_1_6.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblNewLabel_12_1_6.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_12_1_6.setBounds(155, 355, 830, 354);
+		panelIntro.add(lblNewLabel_12_1_6);
 		
 		// panelHombre
 		
 		panelHombre = new JPanel();
+		panelHombre.setBackground(Color.WHITE);
+		panelHombre.setForeground(Color.WHITE);
 		layeredPane.add(panelHombre, "name_64702409897200");
+		panelHombre.setLayout(null);
+		
+		JLabel lblNewLabel_12 = new JLabel("");
+		lblNewLabel_12.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblNewLabel_12.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_12.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\4m.png"));
+		lblNewLabel_12.setBounds(125, 354, 830, 365);
+		panelHombre.add(lblNewLabel_12);
+		
+		JLabel lblNewLabel_12_1 = new JLabel("");
+		lblNewLabel_12_1.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\5m.png"));
+		lblNewLabel_12_1.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblNewLabel_12_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_12_1.setBounds(125, 0, 830, 354);
+		panelHombre.add(lblNewLabel_12_1);
 		
 		// panelNinos
 		
 		panelNinos = new JPanel();
+		panelNinos.setBackground(Color.WHITE);
 		layeredPane.add(panelNinos, "name_64702431449800");
+		panelNinos.setLayout(null);
+		
+		JLabel lblNewLabel_12_1_3 = new JLabel("");
+		lblNewLabel_12_1_3.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\1n.png"));
+		lblNewLabel_12_1_3.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblNewLabel_12_1_3.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_12_1_3.setBounds(137, 0, 830, 354);
+		panelNinos.add(lblNewLabel_12_1_3);
+		
+		JLabel lblNewLabel_12_1_4 = new JLabel("");
+		lblNewLabel_12_1_4.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\2n.png"));
+		lblNewLabel_12_1_4.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblNewLabel_12_1_4.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_12_1_4.setBounds(137, 365, 830, 354);
+		panelNinos.add(lblNewLabel_12_1_4);
 		
 		// panelHogar
 		
 		panelHogar = new JPanel();
+		panelHogar.setBackground(Color.WHITE);
 		layeredPane.add(panelHogar, "name_64702449338500");
+		panelHogar.setLayout(null);
+		
+		JLabel lblNewLabel_12_1_3_1 = new JLabel("");
+		lblNewLabel_12_1_3_1.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\1h.png"));
+		lblNewLabel_12_1_3_1.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblNewLabel_12_1_3_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_12_1_3_1.setBounds(139, 0, 830, 354);
+		panelHogar.add(lblNewLabel_12_1_3_1);
+		
+		JLabel lblNewLabel_12_1_3_2 = new JLabel("");
+		lblNewLabel_12_1_3_2.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\2h.png"));
+		lblNewLabel_12_1_3_2.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblNewLabel_12_1_3_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_12_1_3_2.setBounds(139, 364, 830, 354);
+		panelHogar.add(lblNewLabel_12_1_3_2);
 		
 		// panelNosotros
 		
@@ -477,13 +538,33 @@ public class VentanaInicio extends JFrame {
 		JTextArea txtrqueEs = new JTextArea();
 		txtrqueEs.setEditable(false);
 		txtrqueEs.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		txtrqueEs.setText("1- \u00BFQue es [esta app]?\r\n\t[esta app] es un servicio que confecciona distintas\r\n\tpertenencias que provienen de los usuarios que \r\n\testan registrado en esta plataforma. El cual permite\r\n\tINTERCAMBIAR, COMPRAR, \tVENDER y DONAR articulos\r\n\ta la gente ....\r\n2- \u00BFUsuario o Visitante?\r\n\tVisitante: Es aquella persona que usa la plataforma sin\r\n\testar REGISTRADA.\r\n\r\n\tUsuario: Es aquel que dispone de una cuenta en la misma.\r\n\tPor tanto, se convierte en consumidor al publicar art\u00EDculos.\r\n\r\n3- \u00BFComo registrarse en [esta web]?\r\n\t\r\n4- \u00BFComo vender Art\u00EDculos en [esta web]?\r\n\r\n5- \u00BFQue tipos de Art\u00EDculos se pueden vender en [esta web]?\r\n\r\n6- \u00BFComo efectuar el Intercambio?\r\n\r\n7- \u00BFComo efectuar el Envio?\r\n\r\n8- \u00BFComo efectuar el Pago?");
-		txtrqueEs.setBounds(10, 50, 554, 293);
+		txtrqueEs.setText("1- \u00BFQue es [esta app]?\r\n\t[esta app] es un servicio que confecciona distintas\r\n\tpertenencias que provienen de los usuarios que \r\n\testan registrado en esta plataforma. El cual permite\r\n\tINTERCAMBIAR, COMPRAR, \tVENDER y DONAR articulos\r\n\ta la gente ....\r\n2- \u00BFUsuario o Visitante?\r\n\tVisitante: Es aquella persona que usa la plataforma sin\r\n\testar REGISTRADA.\r\n\r\n\tUsuario: Es aquel que dispone de una cuenta en la misma.\r\n\tPor tanto, se convierte en consumidor al publicar art\u00EDculos.\r\n\r\n3- \u00BFComo registrarse en [esta web]?\r\n\tLo primero que tienes que hacer para registrarte en esta web es crear un usuario y \tcontrase\u00F1a, con un email de contactos para sus futuras noticias de la web. Que \tquedar\u00E1 guardado en la web para su futuro inicio de sesi\u00F3n.\r\n\t\r\n4- \u00BFComo vender Art\u00EDculos en [esta web]?\r\n\tPara vender art\u00EDculos en nuestra web lo que tienes que hacer es crear una cuenta \tdonde poder subir tus art\u00EDculos y desde ah\u00ED contactar con la gente interesada.\r\n\r\n5- \u00BFQue tipos de Art\u00EDculos se pueden vender en [esta web]?\r\n\tEn nuestra web lo bueno que tenemos es que se puede vender todo lo que quieras, \tpero principalmente est\u00E1 hecha para vender ropa.\r\n\t\r\n6- \u00BFComo efectuar el Envio?\r\n\tDebes encontrar la direcci\u00F3n que proporciona el cliente para proceder a enviarle el \tart\u00EDculo\r\n\r\n8- \u00BFComo efectuar el Pago?\r\n\tEl pago se tiene que realizar en efectivo a la hora de quedar con el cliente\r\n\t");
+		txtrqueEs.setBounds(20, 38, 554, 559);
 		panelPlataforma.add(txtrqueEs);
 		
-		JLabel lblNewLabel_11 = new JLabel("New label");
-		lblNewLabel_11.setBounds(10, 353, 554, 307);
-		panelPlataforma.add(lblNewLabel_11);
+		txtLoPrimeroQue = new JTextField();
+		txtLoPrimeroQue.setBounds(46, 220, 364, 38);
+		panelPlataforma.add(txtLoPrimeroQue);
+		txtLoPrimeroQue.setColumns(10);
+		
+		panelMujer = new JPanel();
+		panelMujer.setBackground(Color.WHITE);
+		layeredPane.add(panelMujer, "name_1984905181721400");
+		panelMujer.setLayout(null);
+		
+		JLabel lblNewLabel_12_1_1 = new JLabel("");
+		lblNewLabel_12_1_1.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\1f.png"));
+		lblNewLabel_12_1_1.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblNewLabel_12_1_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_12_1_1.setBounds(148, 0, 830, 354);
+		panelMujer.add(lblNewLabel_12_1_1);
+		
+		JLabel lblNewLabel_12_1_2 = new JLabel("");
+		lblNewLabel_12_1_2.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\2f.png"));
+		lblNewLabel_12_1_2.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblNewLabel_12_1_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_12_1_2.setBounds(148, 364, 830, 354);
+		panelMujer.add(lblNewLabel_12_1_2);
 		
 	}
 }

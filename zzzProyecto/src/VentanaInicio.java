@@ -355,27 +355,107 @@ public class VentanaInicio extends JFrame {
 		// panelIntro
 		
 		panelIntro = new JPanel();
+		panelIntro.setBackground(Color.WHITE);
 		layeredPane.add(panelIntro, "name_64702364051000");
+		panelIntro.setLayout(null);
+		
+		JLabel lblNewLabel_12 = new JLabel("");
+		lblNewLabel_12.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblNewLabel_12.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_12.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\2n.png"));
+		lblNewLabel_12.setBounds(140, 0, 847, 358);
+		panelIntro.add(lblNewLabel_12);
+		
+		JLabel lblNewLabel_12_1 = new JLabel("");
+		lblNewLabel_12_1.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\2f.png"));
+		lblNewLabel_12_1.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblNewLabel_12_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_12_1.setBounds(140, 361, 847, 358);
+		panelIntro.add(lblNewLabel_12_1);
 		
 		// panelMujer
 		
 		panelMujer = new JPanel();
+		panelMujer.setBackground(Color.WHITE);
 		layeredPane.add(panelMujer, "name_64702387634800");
+		panelMujer.setLayout(null);
+		
+		JLabel lblNewLabel_12_2 = new JLabel("");
+		lblNewLabel_12_2.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\2f.png"));
+		lblNewLabel_12_2.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblNewLabel_12_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_12_2.setBounds(164, 0, 847, 358);
+		panelMujer.add(lblNewLabel_12_2);
+		
+		JLabel lblNewLabel_12_3 = new JLabel("");
+		lblNewLabel_12_3.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\1f.png"));
+		lblNewLabel_12_3.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblNewLabel_12_3.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_12_3.setBounds(164, 368, 847, 358);
+		panelMujer.add(lblNewLabel_12_3);
 		
 		// panelHombre
 		
 		panelHombre = new JPanel();
+		panelHombre.setBackground(Color.WHITE);
 		layeredPane.add(panelHombre, "name_64702409897200");
+		panelHombre.setLayout(null);
+		
+		JLabel lblNewLabel_12_4 = new JLabel("");
+		lblNewLabel_12_4.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\5m.png"));
+		lblNewLabel_12_4.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblNewLabel_12_4.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_12_4.setBounds(142, 0, 847, 358);
+		panelHombre.add(lblNewLabel_12_4);
+		
+		JLabel lblNewLabel_12_5 = new JLabel("");
+		lblNewLabel_12_5.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\4m.png"));
+		lblNewLabel_12_5.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblNewLabel_12_5.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_12_5.setBounds(142, 361, 847, 358);
+		panelHombre.add(lblNewLabel_12_5);
 		
 		// panelNinos
 		
 		panelNinos = new JPanel();
+		panelNinos.setBackground(Color.WHITE);
 		layeredPane.add(panelNinos, "name_64702431449800");
+		panelNinos.setLayout(null);
+		
+		JLabel lblNewLabel_12_6 = new JLabel("");
+		lblNewLabel_12_6.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\2n.png"));
+		lblNewLabel_12_6.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblNewLabel_12_6.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_12_6.setBounds(139, 0, 847, 358);
+		panelNinos.add(lblNewLabel_12_6);
+		
+		JLabel lblNewLabel_12_7 = new JLabel("");
+		lblNewLabel_12_7.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\1n.png"));
+		lblNewLabel_12_7.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblNewLabel_12_7.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_12_7.setBounds(139, 361, 847, 358);
+		panelNinos.add(lblNewLabel_12_7);
 		
 		// panelHogar
 		
 		panelHogar = new JPanel();
+		panelHogar.setBackground(Color.WHITE);
 		layeredPane.add(panelHogar, "name_64702449338500");
+		panelHogar.setLayout(null);
+		
+		JLabel lblNewLabel_12_8 = new JLabel("");
+		lblNewLabel_12_8.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\1h.png"));
+		lblNewLabel_12_8.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblNewLabel_12_8.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_12_8.setBounds(143, 0, 847, 358);
+		panelHogar.add(lblNewLabel_12_8);
+		
+		JLabel lblNewLabel_12_9 = new JLabel("");
+		lblNewLabel_12_9.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\2h.png"));
+		lblNewLabel_12_9.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblNewLabel_12_9.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_12_9.setBounds(143, 361, 847, 358);
+		panelHogar.add(lblNewLabel_12_9);
 		
 		// panelNosotros
 		
