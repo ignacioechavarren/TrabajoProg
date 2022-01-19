@@ -43,11 +43,13 @@ public class VentanaRegistrado extends JFrame {
 	private JPanel contentPane;
 	private JTextField txtBuscarEnLa;
 	private JLayeredPane layeredPane;
-	private JPanel panelInicio;
+	private JPanel panelPerfil;
 	private JPanel panelBuscar;
 	private JPanel panelVender;
 	private JPanel panelMensajes;
-	private JPanel panelPerfil;
+	private JPanel panelInicio;
+	private JTextField txtAnNoHay;
+	private JTextField txtBuscar;
 
 	/**
 	 * Launch the application.
@@ -313,11 +315,45 @@ public class VentanaRegistrado extends JFrame {
 		contentPane.add(layeredPane);
 		layeredPane.setLayout(new CardLayout(0, 0));
 		
-		panelInicio = new JPanel();
-		layeredPane.add(panelInicio, "name_20240932910100");
+		panelPerfil = new JPanel();
+		layeredPane.add(panelPerfil, "name_20240932910100");
+		panelPerfil.setLayout(null);
+		
+		JLabel lblNewLabel_7 = new JLabel("New label");
+		lblNewLabel_7.setIcon(new ImageIcon(VentanaRegistrado.class.getResource("/Imagenes/icono perfil.png")));
+		lblNewLabel_7.setBounds(10, 25, 485, 413);
+		panelPerfil.add(lblNewLabel_7);
+		
+		JLabel lblNewLabel_8 = new JLabel("USUARIO:");
+		lblNewLabel_8.setBounds(31, 449, 97, 67);
+		panelPerfil.add(lblNewLabel_8);
+		
+		JLabel lblNewLabel_9 = new JLabel("UBICACION:\r\n");
+		lblNewLabel_9.setBounds(31, 517, 97, 25);
+		panelPerfil.add(lblNewLabel_9);
+		
+		JLabel lblNewLabel_10 = new JLabel("DESCRIPCION USUARIO:");
+		lblNewLabel_10.setBounds(31, 566, 161, 25);
+		panelPerfil.add(lblNewLabel_10);
+		
+		JLabel lblNewLabel_11 = new JLabel("\r\nAJUSTES :");
+		lblNewLabel_11.setBounds(31, 612, 81, 14);
+		panelPerfil.add(lblNewLabel_11);
 		
 		panelBuscar = new JPanel();
 		layeredPane.add(panelBuscar, "name_20246212901900");
+		panelBuscar.setLayout(null);
+		
+		JLabel lblNewLabel_13 = new JLabel("");
+		lblNewLabel_13.setBounds(178, 106, 300, 142);
+		lblNewLabel_13.setIcon(new ImageIcon(VentanaRegistrado.class.getResource("/Imagenes/lupa.png")));
+		panelBuscar.add(lblNewLabel_13);
+		
+		txtBuscar = new JTextField();
+		txtBuscar.setText("BUSCAR: ...");
+		txtBuscar.setBounds(178, 216, 86, 20);
+		panelBuscar.add(txtBuscar);
+		txtBuscar.setColumns(10);
 		
 		panelVender = new JPanel();
 		layeredPane.add(panelVender, "name_20250574729300");
@@ -332,12 +368,28 @@ public class VentanaRegistrado extends JFrame {
 		layeredPane.add(panelMensajes, "name_20254777720100");
 		panelMensajes.setLayout(null);
 		
+		panelInicio = new JPanel();
+		layeredPane.add(panelInicio, "name_20254777720667");
+		panelInicio.setLayout(null);
+		
 		JLabel lblNewLabel_5 = new JLabel("New label");
 		lblNewLabel_5.setIcon(new ImageIcon(VentanaRegistrado.class.getResource("/ImgFondos/img_fondoCarta.jpg")));
 		lblNewLabel_5.setBounds(666, 10, 564, 570);
 		panelMensajes.add(lblNewLabel_5);
 		
-		panelPerfil = new JPanel();
-		layeredPane.add(panelPerfil, "name_20260411783700");
+		JLabel lblNewLabel_12 = new JLabel("");
+		lblNewLabel_12.setIcon(new ImageIcon(VentanaRegistrado.class.getResource("/Imagenes/mensajes icono.png")));
+		lblNewLabel_12.setBounds(99, 23, 423, 256);
+		panelMensajes.add(lblNewLabel_12);
+		
+		txtAnNoHay = new JTextField();
+		txtAnNoHay.setEditable(false);
+		txtAnNoHay.setText("A\u00DAN NO HAY MENSAJES NUEVOS.\r\n");
+		txtAnNoHay.setBounds(99, 336, 312, 20);
+		panelMensajes.add(txtAnNoHay);
+		txtAnNoHay.setColumns(10);
+		
+		JPanel panelInicio = new JPanel();
+		layeredPane.add(panelInicio, "name_1974479814214100");
 	}
 }
