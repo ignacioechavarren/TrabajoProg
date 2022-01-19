@@ -50,7 +50,6 @@ public class VentanaRegistrado extends JFrame {
 	private JPanel panelInicio;
 	private JTextField txtAnNoHay;
 	private JTextField txtBuscar;
-	private JTextField textField;
 
 	/**
 	 * Launch the application.
@@ -351,16 +350,10 @@ public class VentanaRegistrado extends JFrame {
 		panelBuscar.add(lblNewLabel_13);
 		
 		txtBuscar = new JTextField();
-		txtBuscar.setText("BUSCAR:");
+		txtBuscar.setText("BUSCAR: ...");
 		txtBuscar.setBounds(178, 216, 86, 20);
 		panelBuscar.add(txtBuscar);
 		txtBuscar.setColumns(10);
-		
-		textField = new JTextField();
-		textField.setText("...");
-		textField.setBounds(178, 259, 86, 20);
-		panelBuscar.add(textField);
-		textField.setColumns(10);
 		
 		panelVender = new JPanel();
 		layeredPane.add(panelVender, "name_20250574729300");
