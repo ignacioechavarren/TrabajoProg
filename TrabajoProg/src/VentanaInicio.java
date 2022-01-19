@@ -250,12 +250,6 @@ public class VentanaInicio extends JFrame {
 		lblNewLabel_5.setBounds(66, 20, 299, 27);
 		panelPlat.add(lblNewLabel_5);
 		
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setBounds(444, 18, 32, 32);
-		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setIcon(new ImageIcon(VentanaInicio.class.getResource("/Imagenes/lupa.png")));
-		contentPane.add(lblNewLabel);
-		
 		JSeparator separator_1 = new JSeparator();
 		separator_1.setBorder(new LineBorder(new Color(0, 0, 0)));
 		separator_1.setForeground(Color.BLACK);
@@ -317,9 +311,9 @@ public class VentanaInicio extends JFrame {
 		lblInterro.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-//				VentanaAsistencia newframe = new VentanaAsistencia();
-//				newframe.setVisible(true);
-//				dispose();
+				VentanaAsistencia newframe = new VentanaAsistencia();
+				newframe.setVisible(true);
+				dispose();
 			}
 		});
 		lblInterro.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
@@ -565,6 +559,11 @@ public class VentanaInicio extends JFrame {
 		lblNewLabel_12_1_2.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_12_1_2.setBounds(148, 364, 830, 354);
 		panelMujer.add(lblNewLabel_12_1_2);
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon(VentanaInicio.class.getResource("/Imagenes/lupa.png")));
+		lblNewLabel.setBounds(434, 17, 45, 35);
+		contentPane.add(lblNewLabel);
 		
 	}
 }
