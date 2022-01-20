@@ -283,23 +283,5 @@ public class VentanaLogin extends JFrame {
 		lblAqui.setFont(new Font("Arial Black", Font.PLAIN, 13));
 		lblAqui.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		
-		final JPanel btnEye = new JPanel();
-		btnEye.setBackground(Color.WHITE);
-		btnEye.setBounds(454, 390, 46, 40);
-		contentPane.add(btnEye);
-		btnEye.setLayout(null);
-		
-		JLabel lblEyeImg = new JLabel("");
-		lblEyeImg.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {				//al clickar a la imagen del ojo se cambia el color del fondo
-				btnEye.setBackground(Color.LIGHT_GRAY);
-			}
-		});
-		lblEyeImg.setBounds(0, 0, 45, 40);
-		btnEye.add(lblEyeImg);
-		lblEyeImg.setHorizontalAlignment(SwingConstants.CENTER);
-		lblEyeImg.setIcon(new ImageIcon(img_eye));
-		
 	}
 }

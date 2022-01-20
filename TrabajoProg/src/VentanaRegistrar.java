@@ -217,6 +217,11 @@ public class VentanaRegistrar extends JFrame {
 		btnCrear.setBounds(139, 522, 328, 42);
 		contentPane.add(btnCrear);
 		btnCrear.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("CREAR CUENTA");
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 15));
+		lblNewLabel.setBounds(89, 11, 147, 20);
+		btnCrear.add(lblNewLabel);
 
 		// un label donde indicaremos la accion "crear cuenta"
 

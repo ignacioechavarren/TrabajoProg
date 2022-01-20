@@ -378,12 +378,12 @@ public class VentanaInicio extends JFrame {
 		JLabel lblNewLabel_12 = new JLabel("");
 		lblNewLabel_12.setHorizontalTextPosition(SwingConstants.CENTER);
 		lblNewLabel_12.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_12.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\4m.png"));
+		lblNewLabel_12.setIcon(new ImageIcon(VentanaInicio.class.getResource("/ImgFondos/4m.png")));
 		lblNewLabel_12.setBounds(125, 354, 830, 365);
 		panelHombre.add(lblNewLabel_12);
 		
 		JLabel lblNewLabel_12_1 = new JLabel("");
-		lblNewLabel_12_1.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\5m.png"));
+		lblNewLabel_12_1.setIcon(new ImageIcon(VentanaInicio.class.getResource("/ImgFondos/5m.png")));
 		lblNewLabel_12_1.setHorizontalTextPosition(SwingConstants.CENTER);
 		lblNewLabel_12_1.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_12_1.setBounds(125, 0, 830, 354);
@@ -397,14 +397,14 @@ public class VentanaInicio extends JFrame {
 		panelNinos.setLayout(null);
 		
 		JLabel lblNewLabel_12_1_3 = new JLabel("");
-		lblNewLabel_12_1_3.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\1n.png"));
+		lblNewLabel_12_1_3.setIcon(new ImageIcon(VentanaInicio.class.getResource("/ImgFondos/1n.png")));
 		lblNewLabel_12_1_3.setHorizontalTextPosition(SwingConstants.CENTER);
 		lblNewLabel_12_1_3.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_12_1_3.setBounds(137, 0, 830, 354);
 		panelNinos.add(lblNewLabel_12_1_3);
 		
 		JLabel lblNewLabel_12_1_4 = new JLabel("");
-		lblNewLabel_12_1_4.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\2n.png"));
+		lblNewLabel_12_1_4.setIcon(new ImageIcon(VentanaInicio.class.getResource("/ImgFondos/2n.png")));
 		lblNewLabel_12_1_4.setHorizontalTextPosition(SwingConstants.CENTER);
 		lblNewLabel_12_1_4.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_12_1_4.setBounds(137, 365, 830, 354);
@@ -418,14 +418,14 @@ public class VentanaInicio extends JFrame {
 		panelHogar.setLayout(null);
 		
 		JLabel lblNewLabel_12_1_3_1 = new JLabel("");
-		lblNewLabel_12_1_3_1.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\1h.png"));
+		lblNewLabel_12_1_3_1.setIcon(new ImageIcon(VentanaInicio.class.getResource("/ImgFondos/1h.png")));
 		lblNewLabel_12_1_3_1.setHorizontalTextPosition(SwingConstants.CENTER);
 		lblNewLabel_12_1_3_1.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_12_1_3_1.setBounds(139, 0, 830, 354);
 		panelHogar.add(lblNewLabel_12_1_3_1);
 		
 		JLabel lblNewLabel_12_1_3_2 = new JLabel("");
-		lblNewLabel_12_1_3_2.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\2h.png"));
+		lblNewLabel_12_1_3_2.setIcon(new ImageIcon(VentanaInicio.class.getResource("/ImgFondos/2h.png")));
 		lblNewLabel_12_1_3_2.setHorizontalTextPosition(SwingConstants.CENTER);
 		lblNewLabel_12_1_3_2.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_12_1_3_2.setBounds(139, 364, 830, 354);
@@ -541,14 +541,14 @@ public class VentanaInicio extends JFrame {
 		panelMujer.setLayout(null);
 		
 		JLabel lblNewLabel_12_1_1 = new JLabel("");
-		lblNewLabel_12_1_1.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\1f.png"));
+		lblNewLabel_12_1_1.setIcon(new ImageIcon(VentanaInicio.class.getResource("/ImgFondos/1f.png")));
 		lblNewLabel_12_1_1.setHorizontalTextPosition(SwingConstants.CENTER);
 		lblNewLabel_12_1_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_12_1_1.setBounds(148, 0, 830, 354);
+		lblNewLabel_12_1_1.setBounds(69, 0, 909, 354);
 		panelMujer.add(lblNewLabel_12_1_1);
 		
 		JLabel lblNewLabel_12_1_2 = new JLabel("");
-		lblNewLabel_12_1_2.setIcon(new ImageIcon("C:\\Users\\joelg\\Downloads\\2f.png"));
+		lblNewLabel_12_1_2.setIcon(new ImageIcon(VentanaInicio.class.getResource("/ImgFondos/2f.png")));
 		lblNewLabel_12_1_2.setHorizontalTextPosition(SwingConstants.CENTER);
 		lblNewLabel_12_1_2.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_12_1_2.setBounds(148, 364, 830, 354);
