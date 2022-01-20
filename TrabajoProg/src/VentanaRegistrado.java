@@ -359,10 +359,10 @@ public class VentanaRegistrado extends JFrame {
 		layeredPane.add(panelVender, "name_20250574729300");
 		panelVender.setLayout(null);
 		
-		JLabel lblNewLabel_7 = new JLabel("");
-		lblNewLabel_7.setIcon(new ImageIcon(VentanaRegistrado.class.getResource("/Imagenes/camara.png")));
-		lblNewLabel_7.setBounds(10, 10, 463, 380);
-		panelVender.add(lblNewLabel_7);
+		JLabel lblNewLabel_20= new JLabel("");
+		lblNewLabel_20.setIcon(new ImageIcon(VentanaRegistrado.class.getResource("/Imagenes/camara.png")));
+		lblNewLabel_20.setBounds(10, 10, 463, 380);
+		panelVender.add(lblNewLabel_20);
 		
 		panelMensajes = new JPanel();
 		layeredPane.add(panelMensajes, "name_20254777720100");
@@ -388,8 +388,5 @@ public class VentanaRegistrado extends JFrame {
 		txtAnNoHay.setBounds(99, 336, 312, 20);
 		panelMensajes.add(txtAnNoHay);
 		txtAnNoHay.setColumns(10);
-		
-		JPanel panelInicio = new JPanel();
-		layeredPane.add(panelInicio, "name_1974479814214100");
 	}
 }
