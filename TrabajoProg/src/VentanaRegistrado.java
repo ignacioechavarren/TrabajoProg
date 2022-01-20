@@ -359,7 +359,7 @@ public class VentanaRegistrado extends JFrame {
 		layeredPane.add(panelVender, "name_20250574729300");
 		panelVender.setLayout(null);
 		
-		JLabel lblNewLabel_7 = new JLabel("New label");
+		JLabel lblNewLabel_7 = new JLabel("");
 		lblNewLabel_7.setIcon(new ImageIcon(VentanaRegistrado.class.getResource("/Imagenes/camara.png")));
 		lblNewLabel_7.setBounds(10, 10, 463, 380);
 		panelVender.add(lblNewLabel_7);
